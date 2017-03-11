@@ -47,6 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" href="css/superfish.css">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
 
 
 	<!-- Modernizr JS -->
@@ -55,6 +56,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
 
 	</head>
 	<body>
@@ -125,6 +128,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<span><a class="btn btn-primary" href="#">Get Started</a></span>
 				</div>
 			</div>
+
+<div id="loginmodal" style="display:none;">
+
+    <h1>User Login</h1>
+
+    <form id="loginform" name="loginform" method="post" action="index.html">
+
+      <label for="username">Username:</label>
+
+      <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+
+      
+
+      <label for="password">Password:</label>
+
+      <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+
+      
+
+      <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3"></div>
+
+    </form>
+
+  </div>
 
 		</div>
         <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
@@ -351,7 +378,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- END fh5co-wrapper -->
 
 	<!-- jQuery -->
+<script type="text/javascript">
 
+$(function(){
+
+  $('#loginform').submit(function(e){
+
+    return false;
+
+  });
+
+  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+
+});
+
+</script>
 
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -368,7 +409,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-
+ <script src="http://www.jq22.com/js/jq.js"></script>
 	</body>
 </html>
 
