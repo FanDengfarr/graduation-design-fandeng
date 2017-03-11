@@ -1,5 +1,11 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -59,15 +65,15 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.jsp">Home</a>
 								</li>
 								<li>
-									<a href="portfolio.html" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
 										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
@@ -77,8 +83,8 @@
 										<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
 									</ul>
 								</li>
-								<li>
-									<a href="services.html" class="fh5co-sub-ddown">Services</a>
+								<li class="active">
+									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
@@ -98,9 +104,9 @@
 										<li><a href="#">Photography</a></li> 
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li class="active"><a href="contact.html">Contact</a></li>
+								<li><a href="about.jsp">About</a></li>
+								<li><a href="blog.jsp">Blog</a></li>
+								<li><a href="contact.jsp">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -112,60 +118,124 @@
 
 		<div class="fh5co-hero fh5co-hero-2">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/blog-3.jpg);">
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/blog-1.jpg);">
 				<div class="desc animate-box">
-					<h2>Contact Us</h2>
+					<h2>Our Services</h2>
 					<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a></span>
 				</div>
 			</div>
 		</div>
 		<!-- end:header-top -->
-		
-		<div id="fh5co-contact" class="animate-box">
+		<div id="fh5co-services">
 			<div class="container">
-				<form action="#">
-					<div class="row">
-						<div class="col-md-6">
-							<h3 class="section-title">Our Address</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="contact-info">
-								<li><i class="icon-location-pin"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-								<li><i class="icon-phone2"></i>+ 1235 2355 98</li>
-								<li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
-								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
-							</ul>
-						</div>
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Name">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<input type="submit" value="Send Message" class="btn btn-primary">
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3">
+						<div class="fh5co-icon"><i class="icon-browser"></i></div>
 					</div>
-				</form>
+					<div class="col-md-8 col-md-push-1">
+						<h4 class="fh5co-number">01.</h4>
+						<h2>Web Development</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3 col-md-push-8">
+						<div class="fh5co-icon"><i class="icon-mobile"></i></div>
+					</div>
+					<div class="col-md-7 col-md-pull-3">
+						<h4 class="fh5co-number">02.</h4>
+						<h2>Mobile Apps</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3">
+						<div class="fh5co-icon"><i class="icon-tools"></i></div>
+					</div>
+					<div class="col-md-8 col-md-push-1">
+						<h4 class="fh5co-number">03.</h4>
+						<h2>UX Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3 col-md-push-8">
+						<div class="fh5co-icon"><i class="icon-video"></i></div>
+					</div>
+					<div class="col-md-7 col-md-pull-3">
+						<h4 class="fh5co-number">04.</h4>
+						<h2>Video Editing</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3">
+						<div class="fh5co-icon"><i class="icon-search"></i></div>
+					</div>
+					<div class="col-md-8 col-md-push-1">
+						<h4 class="fh5co-number">05.</h4>
+						<h2>SEO Ranking</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-md-push-8">
+						<div class="fh5co-icon"><i class="icon-cloud"></i></div>
+					</div>
+					<div class="col-md-7 col-md-pull-3">
+						<h4 class="fh5co-number">06.</h4>
+						<h2>Cloud Based Apps</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident commodi?</p>
+						<ul>
+							<li>Web Design</li>
+							<li>Search Engine Optimzation</li>
+							<li>HTML5 &amp; CSS3</li>
+							<li>jQuery Library</li>
+						</ul>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
-		<!-- END fh5co-contact -->
-		<div id="map" class="fh5co-map"></div>
-		<!-- END map -->
+		<!-- END fh5co-services-section -->
+		
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -207,12 +277,12 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
+
+
 

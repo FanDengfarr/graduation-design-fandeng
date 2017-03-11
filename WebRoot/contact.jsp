@@ -1,5 +1,11 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -59,15 +65,15 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.jsp">Home</a>
 								</li>
 								<li>
-									<a href="portfolio.html" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
 										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
@@ -78,7 +84,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="services.html" class="fh5co-sub-ddown">Services</a>
+									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
@@ -98,9 +104,9 @@
 										<li><a href="#">Photography</a></li> 
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li class="active"><a href="blog.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about.jsp">About</a></li>
+								<li><a href="blog.jsp">Blog</a></li>
+								<li class="active"><a href="contact.jsp">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -112,115 +118,60 @@
 
 		<div class="fh5co-hero fh5co-hero-2">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/work-3.jpg);">
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/blog-3.jpg);">
 				<div class="desc animate-box">
-					<h2>Our Blog</h2>
+					<h2>Contact Us</h2>
 					<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a></span>
 				</div>
 			</div>
-
 		</div>
 		<!-- end:header-top -->
-		<div id="fh5co-blog-section" class="fh5co-section-gray">
+		
+		<div id="fh5co-contact" class="animate-box">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Read Our Blog</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
+				<form action="#">
+					<div class="row">
+						<div class="col-md-6">
+							<h3 class="section-title">Our Address</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="contact-info">
+								<li><i class="icon-location-pin"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+								<li><i class="icon-phone2"></i>+ 1235 2355 98</li>
+								<li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
 								</div>
-							</div> 
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Send Message" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
-		<!-- fh5co-blog-section -->
-		
+		<!-- END fh5co-contact -->
+		<div id="map" class="fh5co-map"></div>
+		<!-- END map -->
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -262,10 +213,14 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
-
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
+
+
 

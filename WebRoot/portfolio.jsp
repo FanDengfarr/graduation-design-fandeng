@@ -1,5 +1,11 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -59,15 +65,15 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.jsp">Home</a>
 								</li>
 								<li class="active">
-									<a href="portfolio.html" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
 										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
@@ -78,7 +84,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="services.html" class="fh5co-sub-ddown">Services</a>
+									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
@@ -98,9 +104,9 @@
 										<li><a href="#">Photography</a></li> 
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about.jsp">About</a></li>
+								<li><a href="blog.jsp">Blog</a></li>
+								<li><a href="contact.jsp">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -242,4 +248,5 @@
 
 	</body>
 </html>
+
 
