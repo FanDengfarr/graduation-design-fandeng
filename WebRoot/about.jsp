@@ -64,48 +64,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">健康饮食&nbsp;<span>分享</span>一下</a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.jsp">Home</a>
+									<a href="index.jsp">主页</a>
 								</li>
 								<li>
-									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-										<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-										<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-										<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-										<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">排行榜</a></li>
+										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
+									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">Web Development</a></li>
-									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
-										<li>
-											<a href="#" class="fh5co-sub-ddown">Free HTML5</a>
-											<ul class="fh5co-sub-menu">
-												<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-												<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-												<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-												<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-												<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-												<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
-											</ul>
-										</li>
-										<li><a href="#">UI Animation</a></li>
-										<li><a href="#">Copywriting</a></li>
-										<li><a href="#">Photography</a></li> 
+									 	<li><a href="left-sidebar.html"></a>暂定</li>
+					
 									</ul>
 								</li>
-								<li class="active"><a href="about.jsp">About</a></li>
-								<li><a href="blog.jsp">Blog</a></li>
-								<li><a href="contact.jsp">Contact</a></li>
+								<li class="active"><a href="about.jsp">关于</a></li>
+								<li><a href="blog.jsp">更新日志</a></li>
+								<li><a href="contact.jsp">登录</a></li>
 							</ul>
 						</nav>
 					</div>
