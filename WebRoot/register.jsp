@@ -109,32 +109,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						 <div class="panel-body">
 						<form class="form-horizontal">
 							   <div class="form-group">
-								  <label class="col-lg-5 control-label">账号</label>
+								  <label class="col-lg-5 control-label">邮箱</label>
 								  <div class="col-lg-3">
-									 <input type="email" placeholder="用户名/邮箱" class="form-control">
+									 <input type="email" placeholder="请输入邮箱" class="form-control">
 								  </div>
 							   </div>
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">密码</label>
 								  <div class="col-lg-3">
-									 <input type="password" placeholder="密码" class="form-control">
+									 <input type="password" placeholder="请输入密码" class="form-control">
 								  </div>
 							   </div>
-							   <div class="form-group">
-								  <div class="col-lg-offset-2 col-lg-6">
-									 <div class="checkbox c-checkbox">
-										<label>
-										   <input type="checkbox" checked="">
-										   记住我？</label>
-									 </div>
+							    <div class="form-group">
+								  <label class="col-lg-5 control-label">确认密码</label>
+								  <div class="col-lg-3">
+									 <input type="password" placeholder="请确认密码" class="form-control">
 								  </div>
 							   </div>
+							
 							   <div class="form-group">
 								  <div class="col-lg-offset-2 col-lg-8">
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<button type="submit" class="btn btn-primary">登录</button>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<input class="btn btn-primary" type="button" onclick="window.location.href='register.jsp'" value="去注册">
+									<button type="submit" class="btn btn-primary">注册</button>
 								  </div>
 							   </div>
 							</form>

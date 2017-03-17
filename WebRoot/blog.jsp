@@ -4,7 +4,7 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -65,48 +65,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">健康饮食&nbsp;<span>分享</span>一下</a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.jsp">Home</a>
+									<a href="index.jsp">主页</a>
 								</li>
 								<li>
-									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-										<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-										<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-										<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-										<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">排行榜</a></li>
+										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
+									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">Web Development</a></li>
-									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
-										<li>
-											<a href="#" class="fh5co-sub-ddown">Free HTML5</a>
-											<ul class="fh5co-sub-menu">
-												<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-												<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-												<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-												<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-												<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-												<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
-											</ul>
-										</li>
-										<li><a href="#">UI Animation</a></li>
-										<li><a href="#">Copywriting</a></li>
-										<li><a href="#">Photography</a></li> 
+									 	<li><a href="left-sidebar.html"></a>暂定</li>
+					
 									</ul>
 								</li>
-								<li><a href="about.jsp">About</a></li>
-								<li class="active"><a href="blog.jsp">Blog</a></li>
-								<li><a href="contact.jsp">Contact</a></li>
+								<li><a href="about.jsp">关于</a></li>
+								<li class="active"><a href="blog.jsp">更新日志</a></li>
+								<li><a href="contact.jsp">登录</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -120,8 +102,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/work-3.jpg);">
 				<div class="desc animate-box">
-					<h2>Our Blog</h2>
-					<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a></span>
+				
+				
+				
 				</div>
 			</div>
 
@@ -274,7 +257,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	</body>
 </html>
-
 
 
 

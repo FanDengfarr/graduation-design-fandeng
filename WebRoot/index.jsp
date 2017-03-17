@@ -32,6 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+  
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -47,7 +48,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" href="css/superfish.css">
 
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" media="all" href="style.css">
 
 
 	<!-- Modernizr JS -->
@@ -56,9 +56,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
 
+	
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
@@ -68,48 +67,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.jsp">Guar<span>dian</span></a></h1>
+						<h1 id="fh5co-logo"><a href="index.jsp">健康饮食&nbsp;<span>分享</span>一下</a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li class="active">
-									<a href="index.jsp">Home</a>
+									<a href="index.jsp">主页</a>
 								</li>
 								<li>
-									<a href="portfolio.jsp" class="fh5co-sub-ddown">Projects</a>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-										<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-										<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-										<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-										<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">排行榜</a></li>
+										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="services.jsp" class="fh5co-sub-ddown">Services</a>
+									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">Web Development</a></li>
-									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
-										<li>
-											<a href="#" class="fh5co-sub-ddown">Free HTML5</a>
-											<ul class="fh5co-sub-menu">
-												<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-												<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-												<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-												<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-												<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-												<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
-											</ul>
-										</li>
-										<li><a href="#">UI Animation</a></li>
-										<li><a href="#">Copywriting</a></li>
-										<li><a href="#">Photography</a></li> 
+									 	<li><a href="left-sidebar.html"></a>暂定</li>
+					
 									</ul>
 								</li>
-								<li><a href="about.jsp">About</a></li>
-								<li><a href="blog.jsp">Blog</a></li>
-								<li><a href="contact.jsp">Contact</a></li>
+								<li><a href="about.jsp">关于</a></li>
+								<li><a href="blog.jsp">更新日志</a></li>
+								<li><a href="contact.jsp">登录</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -123,36 +104,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
 				<div class="desc animate-box">
-					<h2>Guardian Free HTML5 Template</h2>
-					<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a></span>
-					<span><a class="btn btn-primary" href="#">Get Started</a></span>
+					<h2>快来分享你的健康饮食小秘诀吧</h2>
+					<span>此处可以是轮播图 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">Bootstrap模板</a></span>
+					<span><a class="btn btn-primary" href="#" >Get Started</a></span>
 				</div>
 			</div>
-
-<div id="loginmodal" style="display:none;">
-
-    <h1>User Login</h1>
-
-    <form id="loginform" name="loginform" method="post" action="index.html">
-
-      <label for="username">Username:</label>
-
-      <input type="text" name="username" id="username" class="txtfield" tabindex="1">
-
-      
-
-      <label for="password">Password:</label>
-
-      <input type="password" name="password" id="password" class="txtfield" tabindex="2">
-
-      
-
-      <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3"></div>
-
-    </form>
-
-  </div>
-
+			
 		</div>
         <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
 		<!-- end:header-top -->
@@ -375,24 +332,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- END fh5co-page -->
 
 	</div>
+	
+
+
+
 	<!-- END fh5co-wrapper -->
 
 	<!-- jQuery -->
-<script type="text/javascript">
 
-$(function(){
-
-  $('#loginform').submit(function(e){
-
-    return false;
-
-  });
-
-  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
-
-});
-
-</script>
 
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -409,7 +356,6 @@ $(function(){
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
- <script src="http://www.jq22.com/js/jq.js"></script>
 	</body>
 </html>
 
