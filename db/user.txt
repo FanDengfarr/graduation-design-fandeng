@@ -3,8 +3,8 @@ CREATE DATABASE IF NOT EXISTS health;
 USE health;
 
 CREATE TABLE user(
-  ID int ,
-  username varchar(255) primary key,
+  ID int primary key,
+  username varchar(255),
   password varchar(255),
   state varchar(10),
   actiCode varchar(255),
