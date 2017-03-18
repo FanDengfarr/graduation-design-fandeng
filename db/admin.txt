@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS health;
+
+USE helath;
+
+CREATE TABLE admin(
+  id int primary key,
+  admin varchar(50),
+  adpwd varchar(50) 
+);
+
