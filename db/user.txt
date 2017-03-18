@@ -6,9 +6,9 @@ CREATE TABLE user(
   ID int ,
   username varchar(255) primary key,
   password varchar(255),
-  state varchar(10)
-  ActiCode varchar(255),
-  token_exptime varchar(255)	
+  state varchar(10),
+  actiCode varchar(255),
+  token_exptime varchar(255)
 	
 );
 
