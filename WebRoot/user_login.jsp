@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</li>
 								<li><a href="about.jsp">关于</a></li>
 								<li><a href="blog.jsp">更新日志</a></li>
-								<li class="active"><a href="contact.jsp">登录</a></li>
+								<li class="active"><a href="user_login.jsp">登录</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -134,7 +134,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<button type="submit" class="btn btn-primary">登录</button>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<input class="btn btn-primary" type="button" onclick="window.location.href='register.jsp'" value="去注册">
+									<input class="btn btn-primary" type="button" onclick="window.location.href='user_register.jsp'" value="去注册">
+								  </div>
+								  <div class="col-lg-offset-2 col-lg-8">
+									<br><a style="color:white" href="admin_login.jsp">管理员入口>></a>
 								  </div>
 							   </div>
 							</form>
