@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</li>
 								<li><a href="about.jsp">关于</a></li>
 								<li><a href="blog.jsp">更新日志</a></li>
-								<li class="active"><a href="contact.jsp">登录</a></li>
+								<li class="active"><a href="user_login.jsp">登录</a></li>
 							</ul>
 						</nav>
 					</div>
