@@ -4,11 +4,11 @@ USE health;
 
 CREATE TABLE user(
   ID int primary key,
-  username varchar(255),
-  password varchar(255),
+  username varchar(50),
+  password varchar(50),
   state varchar(10),
-  actiCode varchar(255),
-  token_exptime varchar(255)
+  actiCode varchar(100),
+  token_exptime varchar(50)
 	
 );
 

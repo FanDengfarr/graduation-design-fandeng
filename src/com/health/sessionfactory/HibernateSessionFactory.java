@@ -1,4 +1,4 @@
-package library;
+package com.health.sessionfactory;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

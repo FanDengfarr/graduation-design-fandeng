@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS health;
 
-USE helath;
+USE health;
 
 CREATE TABLE admin(
   id int primary key,
