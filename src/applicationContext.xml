@@ -26,5 +26,9 @@
 				</prop>
 			</props>
 		</property>
-	</bean>
+		<property name="mappingResources">
+			<list>
+				<value>com/health/pojo/Admin.hbm.xml</value>
+				<value>com/health/pojo/User.hbm.xml</value></list>
+		</property></bean>
 	</beans>
