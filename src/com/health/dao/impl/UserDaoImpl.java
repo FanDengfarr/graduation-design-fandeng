@@ -63,6 +63,14 @@ public class UserDaoImpl extends BaseDaoHibernate3
 		}
 		return null;
 	}
-
+	@Override
+    public boolean login(String username, String password) {
+        List<User> u=this.getHibernateTemplate().find("from User where username=? and password=?",username,password);
+        Boolean flag=false;
+        if(u.size()>0){
+            flag=true;
+        }
+        return flag;
+    }
 	
 }

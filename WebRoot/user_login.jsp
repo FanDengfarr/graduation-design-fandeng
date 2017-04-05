@@ -107,17 +107,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						
 						 
 						 <div class="panel-body">
-						<form class="form-horizontal">
+						<form class="form-horizontal" method="post" action="Login">
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">账号</label>
 								  <div class="col-lg-3">
-									 <input type="email" placeholder="用户名/邮箱" class="form-control">
+									 <input type="email" placeholder="用户名/邮箱" class="form-control" name="username">
 								  </div>
 							   </div>
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">密码</label>
 								  <div class="col-lg-3">
-									 <input type="password" placeholder="密码" class="form-control">
+									 <input type="password" placeholder="密码" class="form-control" name="password">
 								  </div>
 							   </div>
 							   <div class="form-group">

@@ -21,5 +21,6 @@ public interface UserDao{
 		 , String pass);
 
 	User findByName(String name);
-
+	
+	boolean login(String username, String password);
 }

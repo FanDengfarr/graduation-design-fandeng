@@ -11,6 +11,7 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/health">
 		</property>
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="123456"></property>
 	</bean>
@@ -31,4 +32,29 @@
 				<value>com/health/pojo/Admin.hbm.xml</value>
 				<value>com/health/pojo/User.hbm.xml</value></list>
 		</property></bean>
+		
+		<bean id="UserDAO" class="com.health.dao.UserDao">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <!-- Dao注入sessionFactory -->
+    <bean id="userd" class="com.health.dao.impl.UserDaoImpl">
+        <!-- 注入持久化操作所需的SessionFactory -->
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <!-- service注入dao id为下面的ref class为service实现类 -->
+    <bean id="users" class="com.health.service.impl.UserServiceImpl">
+        <property name="userdao" ref="userd"></property>
+    </bean>
+
+    <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
+        ref随便取 -->
+    <bean id="usera" class="com.health.action.LoginAction" scope="prototype">
+        <property name="userservice" ref="users"></property>
+    </bean>
 	</beans>
