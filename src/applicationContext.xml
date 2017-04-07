@@ -16,7 +16,7 @@
 		<property name="password" value="123456"></property>
 	</bean>
 	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource">
 			<ref bean="dataSource" />
 		</property>
@@ -25,6 +25,7 @@
 				<prop key="hibernate.dialect">
 					org.hibernate.dialect.MySQLDialect
 				</prop>
+				<prop key="hibernate.show_sql">true</prop>
 			</props>
 		</property>
 		<property name="mappingResources">
@@ -32,7 +33,6 @@
 				<value>com/health/pojo/Admin.hbm.xml</value>
 				<value>com/health/pojo/User.hbm.xml</value></list>
 		</property></bean>
-		
 		
 
     <!-- Dao注入sessionFactory -->

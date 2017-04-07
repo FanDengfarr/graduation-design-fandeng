@@ -111,13 +111,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">账号</label>
 								  <div class="col-lg-3">
-									 <input type="email" placeholder="用户名/邮箱" class="form-control" name="username">
+									 <input type="email" name="username" placeholder="用户名/邮箱" class="form-control" >
 								  </div>
 							   </div>
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">密码</label>
 								  <div class="col-lg-3">
-									 <input type="password" placeholder="密码" class="form-control" name="password">
+									 <input type="password" name="password" placeholder="密码" class="form-control" >
 								  </div>
 							   </div>
 							   <div class="form-group">

@@ -5,7 +5,7 @@ import java.util.*;
 import com.health.common.impl.*;
 import com.health.dao.UserDao;
 import com.health.pojo.User;
-
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 public class UserDaoImpl extends BaseDaoHibernate3
 	implements UserDao
 {
@@ -55,6 +55,7 @@ public class UserDaoImpl extends BaseDaoHibernate3
 	
 	public User findByName(String name)
 	{
+		@SuppressWarnings("unchecked")
 		List<User> users = (List<User>)getHibernateTemplate()
 			.find("from User where username = ? " , name);
 		if (users!= null && users.size() >= 1)
@@ -65,7 +66,8 @@ public class UserDaoImpl extends BaseDaoHibernate3
 	}
 	@Override
     public boolean login(String username, String password) {
-        List<User> u=this.getHibernateTemplate().find("from User where username=? and password=?",username,password);
+        @SuppressWarnings("unchecked")
+		List<User> u=this.getHibernateTemplate().find("from User where username=? and password=?",username,password);
         Boolean flag=false;
         if(u.size()>0){
             flag=true;

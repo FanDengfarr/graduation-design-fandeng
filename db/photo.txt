@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS health;
+
+USE health;
+
+CREATE TABLE user(
+  ID int primary key,
+  username varchar(50),
+  password varchar(50),
+  state varchar(10),
+  actiCode varchar(100),
+  token_exptime varchar(50)
+	
+);
+
