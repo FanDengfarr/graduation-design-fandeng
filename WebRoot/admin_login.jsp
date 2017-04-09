@@ -76,18 +76,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	<div id="login-content" class="clearfix">
 	
-	<form action="./admin/index.jsp">
+	<form method="post" action="AdminLogin">
 				<fieldset>
 					<div class="control-group">
-						<label class="control-label" for="username">账号</label>
+						<label class="control-label" for="admin">账号</label>
 						<div class="controls">
-							<input type="text" class="" id="username" />
+							<input type="text" class="" name="admin" id="admin" />
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="password">密码</label>
+						<label class="control-label" for="adpwd">密码</label>
 						<div class="controls">
-							<input type="password" class="" id="password" />
+							<input type="password" class="" name="adpwd" "id="adpwd" />
 						</div>
 					</div>
 				</fieldset>

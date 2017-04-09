@@ -42,15 +42,28 @@
             <ref bean="sessionFactory" />
         </property>
     </bean>
+    
+     <bean id="admind" class="com.health.dao.impl.AdminDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
 
     <!-- service注入dao id为下面的ref class为service实现类 -->
     <bean id="users" class="com.health.service.impl.UserServiceImpl">
         <property name="userdao" ref="userd"></property>
+    </bean>
+    
+    <bean id="admins" class="com.health.service.impl.AdminServiceImpl">
+        <property name="admindao" ref="admind"></property>
     </bean>
 
     <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
         ref随便取 -->
     <bean id="usera" class="com.health.action.LoginAction" scope="prototype">
         <property name="userservice" ref="users"></property>
+    </bean>
+    <bean id="admina" class="com.health.action.AdminLoginAction" scope="prototype">
+        <property name="adminservice" ref="admins"></property>
     </bean>
 	</beans>
