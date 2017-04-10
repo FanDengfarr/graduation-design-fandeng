@@ -14,13 +14,19 @@
             <column name="title" length="50" />
         </property>
         <property name="context" type="java.lang.String">
-            <column name="context" />
+            <column name="context" length="5000" />
         </property>
         <property name="author" type="java.lang.String">
             <column name="author" length="20" />
         </property>
         <property name="createtime" type="java.sql.Timestamp">
             <column name="createtime" length="19" />
+        </property>
+        <property name="count" type="java.lang.Integer">
+            <column name="count" />
+        </property>
+        <property name="vip" type="java.lang.String">
+            <column name="vip" length="10" />
         </property>
         <set name="photos" inverse="true">
             <key>

@@ -1,6 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
-
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
@@ -58,67 +60,50 @@
 	
 	</head>
 	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-		<%@ include file="header.jsp" %>
 		
-
-		<div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
-				<div class="desc animate-box">
-					<h2>快来分享你的健康饮食小秘诀吧</h2>
-					<span>此处可以是轮播图 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">Bootstrap模板</a></span>
-					<span><a class="btn btn-primary" href="#" >Get Started</a></span>
-				</div>
-			</div>
-			
-		</div>
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
-		<!-- end:header-top -->
-		<div id="fh5co-work-section">
-		  
-		<s:iterator value="listNews">
-		<h1 align="center"style="color:red"><s:property value="title"/></td></h1>
-		<table border="0" width="100%">
-		<tr>
-		   	<td align="center">作者：<s:property value="author"/></td>
-			<td>时间：<s:property value="createtime"/></td>
-		</tr> 
-		</table>
-		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<s:property value="context"/>
-		</p>
-		</s:iterator>
-		
-		 
-		</div>
-	
-		<!-- fh5co-blog-section -->
-		<footer>
-			<div id="footer">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Guardian</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="#/" target="_blank">Freehtml5</a> / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-						</div>
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.jsp">健康饮食&nbsp;<span>分享</span>一下</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active">
+									<a href="index.jsp">主页</a>
+								</li>
+								<li>
+									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="ListNews!list" >文章列表</a></li>
+										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
+									 <ul class="fh5co-sub-menu">
+									 	<li><a href="left-sidebar.html"></a>暂定</li>
+					
+									</ul>
+								</li>
+								<li><a href="about.jsp">关于</a></li>
+								<li><a href="blog.jsp">更新日志</a></li>
+								<li><a href="user_login.jsp">登录</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-			</div>
-		</footer>
-	
+			</header>
+			
+		</div>
+		
 
-	</div>
-	<!-- END fh5co-page -->
-
-	</div>
+		
+		<!-- end:header-top -->
+		
+		<!-- fh5co-work-section -->
+		
 	
 
 

@@ -1,8 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -59,42 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
-		<div id="fh5co-header">
-			<header id="fh5co-header-section">
-				<div class="container">
-					<div class="nav-header">
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.jsp">健康饮食&nbsp;<span>分享</span>一下</a></h1>
-						<!-- START #fh5co-menu-wrap -->
-						<nav id="fh5co-menu-wrap" role="navigation">
-							<ul class="sf-menu" id="fh5co-primary-menu">
-								<li>
-									<a href="index.jsp">主页</a>
-								</li>
-								<li>
-									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
-									<ul class="fh5co-sub-menu">
-										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">排行榜</a></li>
-										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
-									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html"></a>暂定</li>
-					
-									</ul>
-								</li>
-								<li class="active"><a href="about.jsp">关于</a></li>
-								<li><a href="blog.jsp">更新日志</a></li>
-								<li><a href="contact.jsp">登录</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</header>
-			
-		</div>
+		<%@ include file="header.jsp" %>
 		
 
 		<div class="fh5co-hero fh5co-hero-2">
