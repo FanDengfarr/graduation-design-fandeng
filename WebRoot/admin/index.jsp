@@ -12,12 +12,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />    
     
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" />   
-    <link href="../css/font-awesome.css" rel="stylesheet" />   
-    <link href="../css/adminia.css" rel="stylesheet" /> 
-    <link href="../css/adminia-responsive.css" rel="stylesheet" /> 
-    <link href="../css/pages/dashboard.css" rel="stylesheet" /> 
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />   
+    <link href="css/font-awesome.css" rel="stylesheet" />   
+    <link href="css/adminia.css" rel="stylesheet" /> 
+    <link href="css/adminia-responsive.css" rel="stylesheet" /> 
+    <link href="css/pages/dashboard.css" rel="stylesheet" /> 
     
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -60,7 +60,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						
 						<ul class="dropdown-menu">
 							<li>
-								<a href="./account.jsp"><i class="icon-user"></i> 账号设置  </a>
+								<a href="admin/account.jsp"><i class="icon-user"></i> 账号设置  </a>
 							</li>
 							
 							<li>
@@ -122,28 +122,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<ul id="main-nav" class="nav nav-tabs nav-stacked">
 					
 					<li class="active">
-						<a href="./">
+						<a href="admin/index.jsp">
 							<i class="icon-home"></i>
 							###		
 						</a>
 					</li>
 					
 					<li>
-						<a href="./faq.jsp">
+						<a href="admin/faq.jsp">
 							<i class="icon-pushpin"></i>
 							###
 						</a>
 					</li>
 					
 					<li>
-						<a href="./plans.jsp">
+						<a href="admin/plans.jsp">
 							<i class="icon-th-list"></i>
 							###		
 						</a>
 					</li>
 					
 					<li>
-						<a href="./grid.jsp">
+						<a href="admin/grid.jsp">
 							<i class="icon-th-large"></i>
 							###
 							<span class="label label-warning pull-right">5</span>
@@ -151,14 +151,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</li>
 					
 					<li>
-						<a href="./charts.jsp">
+						<a href="admin/charts.jsp">
 							<i class="icon-signal"></i>
 							###	
 						</a>
 					</li>
 					
 					<li>
-						<a href="./account.jsp">
+						<a href="admin/account.jsp">
 							<i class="icon-user"></i>
 							账号							
 						</a>
