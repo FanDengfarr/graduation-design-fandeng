@@ -7,7 +7,18 @@
 			<generator class="increment"></generator>
 		</primary-key>
 	</table>
-<table name="admin" catalog="health" class="com.health.pojo.Admin">
+	<table name="admin" catalog="health"
+		class="com.health.pojo.Admin">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+	<table name="news" catalog="health" class="com.health.pojo.News">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+<table name="photo" catalog="health" class="com.health.pojo.Photo">
 	<primary-key>
 		<generator class="increment"></generator>
 	</primary-key>

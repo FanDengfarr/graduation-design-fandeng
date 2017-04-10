@@ -31,7 +31,10 @@
 		<property name="mappingResources">
 			<list>
 				<value>com/health/pojo/Admin.hbm.xml</value>
-				<value>com/health/pojo/User.hbm.xml</value></list>
+				<value>com/health/pojo/User.hbm.xml</value>
+				<value>com/health/pojo/News.hbm.xml</value>
+				<value>com/health/pojo/Photo.hbm.xml</value>
+				</list>
 		</property></bean>
 		
 
@@ -48,6 +51,12 @@
             <ref bean="sessionFactory" />
         </property>
     </bean>
+    
+     <bean id="newsd" class="com.health.dao.impl.NewsDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
 
     <!-- service注入dao id为下面的ref class为service实现类 -->
     <bean id="users" class="com.health.service.impl.UserServiceImpl">
@@ -57,6 +66,9 @@
     <bean id="admins" class="com.health.service.impl.AdminServiceImpl">
         <property name="admindao" ref="admind"></property>
     </bean>
+    <bean id="newss" class="com.health.service.impl.NewsServiceImpl">
+        <property name="newsdao" ref="newsd"></property>
+    </bean>
 
     <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
         ref随便取 -->
@@ -65,5 +77,11 @@
     </bean>
     <bean id="admina" class="com.health.action.AdminLoginAction" scope="prototype">
         <property name="adminservice" ref="admins"></property>
+    </bean>
+     <bean id="newsa" class="com.health.action.ListNewsAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
+    </bean>
+    <bean id="shownews" class="com.health.action.NewsAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
     </bean>
 	</beans>

@@ -10,5 +10,11 @@
             <result name="input">/admin_login.jsp</result>
             <result name="success">./admin/index.jsp</result>
         </action>
+         <action name="ListNews" class="newsa" method="list">
+            <result name="success">./news_list.jsp</result>
+        </action>
+        <action name="ShowNews" class="shownews" method="show">
+            <result name="success">./news_1.jsp</result>
+        </action>
     </package>
 </struts>    

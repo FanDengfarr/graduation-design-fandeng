@@ -15,37 +15,58 @@ public class LoginAction extends ActionSupport{
     private String username;
     
     
+
+
+
     public UserService getUserservice() {
-        return userservice;
-    }
+		return userservice;
+	}
 
 
-    public void setUserservice(UserService userservice) {
-        this.userservice = userservice;
-    }
 
 
-    public String getPassword() {
-        return password;
-    }
+
+	public void setUserservice(UserService userservice) {
+		this.userservice = userservice;
+	}
 
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 
-    public String getUsername() {
-        return username;
-    }
+
+	public String getPassword() {
+		return password;
+	}
 
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
 
-    public String login(){
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
+
+
+	public String getUsername() {
+		return username;
+	}
+
+
+
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+
+
+
+	public String login(){
         Boolean flag=userservice.login(username, password);
         if(flag){
             return SUCCESS;

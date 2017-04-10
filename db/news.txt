@@ -1,14 +1,12 @@
 CREATE DATABASE IF NOT EXISTS health;
 
 USE health;
+CREATE TABLE news(
 
-CREATE TABLE user(
-  ID int primary key,
-  username varchar(50),
-  password varchar(50),
-  state varchar(10),
-  actiCode varchar(100),
-  token_exptime varchar(50)
-	
-);
-
+  nid INT NOT NULL primary key,
+  title varchar(50),
+  context varchar(255),
+  author varchar(20),
+  createtime datetime
+                    
+) TYPE=INNODB;

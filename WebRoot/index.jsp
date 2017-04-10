@@ -77,7 +77,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li>
 									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">排行榜</a></li>
+										<li><a href="ListNews!list" target="_blank">排行榜</a></li>
 										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
 									</ul>
 								</li>
