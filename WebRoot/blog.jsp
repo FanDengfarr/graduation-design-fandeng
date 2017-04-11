@@ -63,110 +63,72 @@
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/work-3.jpg);">
 				<div class="desc animate-box">
-				
-				
-				
+				<span>本网页记录了网站搭建过程以供学习和交流</span>
+				<span>项目源码请移步 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">GitHub</a></span>
 				</div>
 			</div>
-
 		</div>
 		<!-- end:header-top -->
 		<div id="fh5co-blog-section" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Read Our Blog</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>更新日志如下</h3>
+						<p>项目成员：邓帆、黄庆海</p>
+				
 					</div>
 				</div>
 			</div>
+			<!-- MarkDown文件 -->
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="#">
-								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
-									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
-								</div>
-							</div> 
-						</div>
-					</div>
-				</div>
+			<div class="colspan">
+				<blockquote>
+<h2>1. <strong>主要功能</strong></h2>
+</blockquote>
+<ul>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />
+<blockquote>
+<h2>2. <strong>主要技术</strong></h2>
+</blockquote>
+<ul>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />
+<blockquote>
+<h2>3. <strong>参考文献</strong></h2>
+</blockquote>
+<ul>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />		
+		
+			</div>		
 			</div>
 		</div>
 		<!-- fh5co-blog-section -->
