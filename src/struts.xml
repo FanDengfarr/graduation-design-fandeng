@@ -4,7 +4,7 @@
  <package name="default" extends="struts-default" namespace="/">
         <action name="Login" class="usera" method="login">
             <result name="input">/user_login.jsp</result>
-            <result name="success">/success.jsp</result>
+            <result name="success">/index.jsp</result>
         </action>
         <action name="AdminLogin" class="admina" method="adminlogin">
             <result name="input">/admin_login.jsp</result>

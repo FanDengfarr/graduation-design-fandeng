@@ -10,7 +10,7 @@ import com.health.service.NewsService;
 
 public class NewsServiceImpl implements NewsService{
 	private NewsDao newsdao;
-
+	private News news;
    
 	public NewsDao getNewsdao() {
 		return newsdao;
@@ -48,5 +48,8 @@ public class NewsServiceImpl implements NewsService{
 		pagebean.init();    
 		return pagebean;    
 		}    
+	public Integer save(News news){
+		return newsdao.save(news);
+	}
 		  
 }

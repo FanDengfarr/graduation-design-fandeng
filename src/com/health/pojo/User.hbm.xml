@@ -28,6 +28,12 @@
         <property name="name" type="java.lang.String">
             <column name="name" length="50" />
         </property>
+        <set name="comments" inverse="true">
+            <key>
+                <column name="ucid" />
+            </key>
+            <one-to-many class="com.health.pojo.Comment" />
+        </set>
         <set name="newses" inverse="true">
             <key>
                 <column name="uid" />

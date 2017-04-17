@@ -18,6 +18,7 @@ public class User implements java.io.Serializable {
 	private String actiCode;
 	private String tokenExptime;
 	private String name;
+	private Set comments = new HashSet(0);
 	private Set newses = new HashSet(0);
 
 	// Constructors
@@ -28,13 +29,15 @@ public class User implements java.io.Serializable {
 
 	/** full constructor */
 	public User(String username, String password, String state,
-			String actiCode, String tokenExptime, String name, Set newses) {
+			String actiCode, String tokenExptime, String name, Set comments,
+			Set newses) {
 		this.username = username;
 		this.password = password;
 		this.state = state;
 		this.actiCode = actiCode;
 		this.tokenExptime = tokenExptime;
 		this.name = name;
+		this.comments = comments;
 		this.newses = newses;
 	}
 
@@ -94,6 +97,14 @@ public class User implements java.io.Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Set getComments() {
+		return this.comments;
+	}
+
+	public void setComments(Set comments) {
+		this.comments = comments;
 	}
 
 	public Set getNewses() {

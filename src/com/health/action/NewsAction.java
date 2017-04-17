@@ -17,7 +17,16 @@ public class NewsAction extends ActionSupport{
 	private News news;
 	private List<News> listNews;
 	private Integer nid;
-    public Integer getNid() {
+	private Integer count;
+    public Integer getCount() {
+		return count;
+	}
+
+	public void setCount(Integer count) {
+		this.count = count;
+	}
+
+	public Integer getNid() {
 		return nid;
 	}
 
@@ -52,7 +61,22 @@ public class NewsAction extends ActionSupport{
 	}
 
 	public String show(){
+		ActionContext ctx=ActionContext.getContext();
+		
 		this.listNews=newsservice.findById(nid);
+		/*for(int i=0;i<listNews.size();i++){
+		    news.setNid(listNews.get(0));
+		    news.setUid(listNews.get(1));
+		    news.setTitle(listNews.get(2));
+		}
+		Integer count=(Integer)ctx.getApplication().get(news.getCount());
+		if(count == null)
+			count = 1;
+		else{
+			count=count+1;
+			newsservice.save(news);
+		}
+		*/
 		return SUCCESS;
         
     }

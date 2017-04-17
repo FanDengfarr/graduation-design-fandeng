@@ -1,8 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
@@ -89,7 +86,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</li>
 								<li><a href="about.jsp">关于</a></li>
 								<li><a href="blog.jsp">更新日志</a></li>
+								<s:if test="#session.username==''||#session.username==null">
 								<li><a href="user_login.jsp">登录</a></li>
+								</s:if>
+								<s:else>
+								<li><a href="user_login.jsp">${session.username }</a></li>
+								<li><a href="Login!logout">注销</a></li>
+								</s:else>
 							</ul>
 						</nav>
 					</div>

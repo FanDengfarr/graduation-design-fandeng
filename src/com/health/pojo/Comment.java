@@ -11,6 +11,7 @@ public class Comment implements java.io.Serializable {
 	// Fields
 
 	private Integer comid;
+	private User user;
 	private News news;
 	private String context;
 	private Timestamp comtime;
@@ -22,7 +23,8 @@ public class Comment implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Comment(News news, String context, Timestamp comtime) {
+	public Comment(User user, News news, String context, Timestamp comtime) {
+		this.user = user;
 		this.news = news;
 		this.context = context;
 		this.comtime = comtime;
@@ -36,6 +38,14 @@ public class Comment implements java.io.Serializable {
 
 	public void setComid(Integer comid) {
 		this.comid = comid;
+	}
+
+	public User getUser() {
+		return this.user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public News getNews() {

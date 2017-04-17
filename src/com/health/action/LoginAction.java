@@ -67,11 +67,20 @@ public class LoginAction extends ActionSupport{
 
 
 	public String login(){
+		ActionContext ctx=ActionContext.getContext();
         Boolean flag=userservice.login(username, password);
         if(flag){
+        	ctx.getSession().put("username", getUsername());
             return SUCCESS;
         }else{
+        	ctx.getSession().put("username", "");
             return INPUT;
         }
     }
+	public String logout(){
+		ActionContext ctx=ActionContext.getContext();
+		ctx.getSession().put("username", "");
+		return INPUT;
+	}
+	
 }

@@ -10,6 +10,9 @@
             <column name="comid" />
             <generator class="increment"></generator>
         </id>
+        <many-to-one name="user" class="com.health.pojo.User" fetch="select">
+            <column name="ucid" />
+        </many-to-one>
         <many-to-one name="news" class="com.health.pojo.News" fetch="select">
             <column name="ncid" />
         </many-to-one>
