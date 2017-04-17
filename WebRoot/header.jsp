@@ -83,7 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li>
 									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html"></a>暂定</li>
+									 	<li><a href="jwplayer.jsp">player</a></li>
 					
 									</ul>
 								</li>

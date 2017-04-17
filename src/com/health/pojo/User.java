@@ -1,5 +1,8 @@
 package com.health.pojo;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * User entity. @author MyEclipse Persistence Tools
  */
@@ -14,6 +17,8 @@ public class User implements java.io.Serializable {
 	private String state;
 	private String actiCode;
 	private String tokenExptime;
+	private String name;
+	private Set newses = new HashSet(0);
 
 	// Constructors
 
@@ -23,12 +28,14 @@ public class User implements java.io.Serializable {
 
 	/** full constructor */
 	public User(String username, String password, String state,
-			String actiCode, String tokenExptime) {
+			String actiCode, String tokenExptime, String name, Set newses) {
 		this.username = username;
 		this.password = password;
 		this.state = state;
 		this.actiCode = actiCode;
 		this.tokenExptime = tokenExptime;
+		this.name = name;
+		this.newses = newses;
 	}
 
 	// Property accessors
@@ -79,6 +86,22 @@ public class User implements java.io.Serializable {
 
 	public void setTokenExptime(String tokenExptime) {
 		this.tokenExptime = tokenExptime;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Set getNewses() {
+		return this.newses;
+	}
+
+	public void setNewses(Set newses) {
+		this.newses = newses;
 	}
 
 }

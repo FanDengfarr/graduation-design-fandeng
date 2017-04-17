@@ -13,6 +13,7 @@ public class News implements java.io.Serializable {
 	// Fields
 
 	private Integer nid;
+	private User user;
 	private String title;
 	private String context;
 	private String author;
@@ -20,6 +21,7 @@ public class News implements java.io.Serializable {
 	private Integer count;
 	private String vip;
 	private Set photos = new HashSet(0);
+	private Set comments = new HashSet(0);
 
 	// Constructors
 
@@ -28,8 +30,10 @@ public class News implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public News(String title, String context, String author,
-			Timestamp createtime, Integer count, String vip, Set photos) {
+	public News(User user, String title, String context, String author,
+			Timestamp createtime, Integer count, String vip, Set photos,
+			Set comments) {
+		this.user = user;
 		this.title = title;
 		this.context = context;
 		this.author = author;
@@ -37,6 +41,7 @@ public class News implements java.io.Serializable {
 		this.count = count;
 		this.vip = vip;
 		this.photos = photos;
+		this.comments = comments;
 	}
 
 	// Property accessors
@@ -47,6 +52,14 @@ public class News implements java.io.Serializable {
 
 	public void setNid(Integer nid) {
 		this.nid = nid;
+	}
+
+	public User getUser() {
+		return this.user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public String getTitle() {
@@ -103,6 +116,14 @@ public class News implements java.io.Serializable {
 
 	public void setPhotos(Set photos) {
 		this.photos = photos;
+	}
+
+	public Set getComments() {
+		return this.comments;
+	}
+
+	public void setComments(Set comments) {
+		this.comments = comments;
 	}
 
 }

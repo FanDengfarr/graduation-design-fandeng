@@ -10,6 +10,9 @@
             <column name="nid" />
             <generator class="increment"></generator>
         </id>
+        <many-to-one name="user" class="com.health.pojo.User" fetch="select">
+            <column name="uid" />
+        </many-to-one>
         <property name="title" type="java.lang.String">
             <column name="title" length="50" />
         </property>
@@ -33,6 +36,12 @@
                 <column name="npid" not-null="true" />
             </key>
             <one-to-many class="com.health.pojo.Photo" />
+        </set>
+        <set name="comments" inverse="true">
+            <key>
+                <column name="ncid" />
+            </key>
+            <one-to-many class="com.health.pojo.Comment" />
         </set>
     </class>
 </hibernate-mapping>

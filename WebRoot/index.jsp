@@ -61,7 +61,6 @@
 		<div id="fh5co-page">
 		<%@ include file="header.jsp" %>
 		
-
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">

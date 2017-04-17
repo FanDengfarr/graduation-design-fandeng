@@ -34,7 +34,7 @@
 				<value>com/health/pojo/User.hbm.xml</value>
 				<value>com/health/pojo/News.hbm.xml</value>
 				<value>com/health/pojo/Photo.hbm.xml</value>
-				</list>
+				<value>com/health/pojo/Comment.hbm.xml</value></list>
 		</property></bean>
 		
 

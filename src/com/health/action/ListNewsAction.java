@@ -72,7 +72,7 @@ public class ListNewsAction extends ActionSupport{
 
 
 	public String list()throws Exception{    
-    this.pagebean = newsservice.queryForPage(5, page);//获取封装了分页信息和数据的pageBean    
+    this.pagebean = newsservice.queryForPage(10, page);//获取封装了分页信息和数据的pageBean    
     this.listNews = this.pagebean.getList(); //获取数据    
     return SUCCESS;    
     }    

@@ -59,7 +59,7 @@
 		
 
 		<div class="fh5co-hero">		
-		<div class="container"
+		<div class="container">
 		<!-- end:header-top -->
 		<div id="fh5co-work-section">
 		  <table border="0" width="100%">

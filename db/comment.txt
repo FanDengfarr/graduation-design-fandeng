@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS health;
+
+USE health;
+CREATE TABLE comment(
+
+  comid INT NOT NULL primary key,
+  context varchar(500),
+  ncid int,
+  comtime datetime,
+CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`ncid`) REFERENCES `news` (`nid`)                    
+) TYPE=INNODB;
