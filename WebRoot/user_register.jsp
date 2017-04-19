@@ -1,12 +1,17 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%  
+    String path = request.getContextPath();  
+    String basePath = request.getScheme() + "://"  
+            + request.getServerName() + ":" + request.getServerPort()  
+            + path + "/";  
+%> 
 
-
-<!DOCTYPE HTML>
-
+<!DOCTYPE HTML>  
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,26 +19,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	
-
-  
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-<!-- 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
- -->	
+	<link rel="shortcut icon" href="favicon.ico">	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -68,28 +55,38 @@
 						
 						 
 						 <div class="panel-body">
-						<form class="form-horizontal">
+						<form id="form1" name="form1" method="post" action="Register" onsubmit="return checkPwd()" class="form-horizontal">
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">邮箱</label>
 								  <div class="col-lg-3">
-									 <input type="email" placeholder="请输入邮箱" class="form-control">
+									 <input type="email" id="username" name="username"  placeholder="请输入邮箱" class="form-control">
+								   
+								  </div>
+							   </div>
+							   <div class="form-group">
+								  <label class="col-lg-5 control-label">昵称</label>
+								  <div class="col-lg-3">
+									 <input type="text" id="name" name="name"  placeholder="请输入昵称" class="form-control">
+								    
 								  </div>
 							   </div>
 							   <div class="form-group">
 								  <label class="col-lg-5 control-label">密码</label>
 								  <div class="col-lg-3">
-									 <input type="password" placeholder="请输入密码" class="form-control">
+									 <input type="password" id="password" name="password" placeholder="请输入密码" class="form-control">
 								  </div>
 							   </div>
 							    <div class="form-group">
 								  <label class="col-lg-5 control-label">确认密码</label>
 								  <div class="col-lg-3">
-									 <input type="password" placeholder="请确认密码" class="form-control">
+									 <input type="password" id="repassword" name="repassword" placeholder="请确认密码" class="form-control">
 								  </div>
 							   </div>
 							
 							   <div class="form-group">
-								  <div class="col-lg-offset-2 col-lg-8">
+								    <div class="col-lg-offset-2 col-lg-8">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button type="reset" class="btn btn-primary">重置</button>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<button type="submit" class="btn btn-primary">注册</button>
 								  </div>
@@ -146,6 +143,17 @@
 	<script src="js/google_map.js"></script> -->
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+<script type="text/javascript">
+function checkPwd(){
+	if(document.form1.password.value!=document.form1.repassword.value){
+		alert("两次密码输入不一致！");
+		return false;
+	}
+	else
+		return true;
+}
+</script>
+
 
 	</body>
 </html>

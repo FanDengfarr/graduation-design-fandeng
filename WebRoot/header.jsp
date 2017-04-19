@@ -10,26 +10,11 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Guardian &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>健康饮食分享平台jiankangmeishishare</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	
 
-  
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-  
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -90,8 +75,14 @@
 								<li><a href="user_login.jsp">登录</a></li>
 								</s:if>
 								<s:else>
-								<li><a href="user_login.jsp">${session.username }</a></li>
-								<li><a href="Login!logout">注销</a></li>
+								<li><a href="user_login.jsp">${session.username }</a>
+								 <ul class="fh5co-sub-menu">
+									 	<li><a href="user_Index.jsp">个人主页</a></li>				
+									 	<li><a href="Login!logout">注销</a></li>				
+								</ul>
+								
+								</li>
+								<!-- <li><a href="Login!logout">注销</a></li> -->
 								</s:else>
 							</ul>
 						</nav>
