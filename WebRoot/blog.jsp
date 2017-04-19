@@ -9,25 +9,11 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Guardian &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>健康饮食分享平台jiankangyinshishare</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	
-
-  
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -64,7 +50,7 @@
 			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/work-3.jpg);">
 				<div class="desc animate-box">
 				<span>本网页记录了网站搭建过程以供学习和交流</span>
-				<span>项目源码请移步 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">GitHub</a></span>
+				<span>项目源码请移步 <a href="https://github.com/FanDengfarr/graduation-design-fandeng" target="_blank" class="fh5co-site-name">GitHub</a></span>
 				</div>
 			</div>
 		</div>
@@ -76,21 +62,20 @@
 						<h3>更新日志如下</h3>
 						<p>项目成员：邓帆、黄庆海</p>
 				
-					</div>
+					</div>				
 				</div>
 			</div>
 			<!-- MarkDown文件 -->
 			<div class="container">
 			<div class="colspan">
-				<blockquote>
-<h2>1. <strong>主要功能</strong></h2>
+
+<!-- 正文内容 -->
+			<blockquote>
+<h1>2017年4月1日</h1>
 </blockquote>
 <ul>
 <li>
-<h3></h3>
-</li>
-<li>
-<h3></h3>
+<h3>基本完成概要设计/详细设计</h3>
 </li>
 <li>
 <h3></h3>
@@ -98,14 +83,11 @@
 </ul>
 <hr />
 <blockquote>
-<h2>2. <strong>主要技术</strong></h2>
+<h1>2017年3月20日</h1>
 </blockquote>
 <ul>
 <li>
-<h3></h3>
-</li>
-<li>
-<h3></h3>
+<h3>初步实现登录/注册,添加后台入口</h3>
 </li>
 <li>
 <h3></h3>
@@ -113,21 +95,53 @@
 </ul>
 <hr />
 <blockquote>
-<h2>3. <strong>参考文献</strong></h2>
+<h1>2017年3月15日</h1>
 </blockquote>
 <ul>
 <li>
-<h3></h3>
-</li>
-<li>
-<h3></h3>
+<h3>SS2H框架搭建，同时微信订阅号项目开始建立</h3>
 </li>
 <li>
 <h3></h3>
 </li>
 </ul>
-<hr />		
-		
+<hr />
+<blockquote>
+<h1>2017年3月9日</h1>
+</blockquote>
+<ul>
+<li>
+<h3>网站雏形搭建以</h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />
+<blockquote>
+<h1>2017年3月5日</h1>
+</blockquote>
+<ul>
+<li>
+<h3>项目开始建立，并且代码上传共享GitHub</h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />
+<blockquote>
+<h1>2016年11月27日</h1>
+</blockquote>
+<ul>
+<li>
+<h3>书写需求分析，开始规划项目</h3>
+</li>
+<li>
+<h3></h3>
+</li>
+</ul>
+<hr />
 			</div>		
 			</div>
 		</div>
@@ -177,7 +191,6 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-
 	</body>
 </html>
 

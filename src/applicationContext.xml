@@ -84,4 +84,7 @@
     <bean id="shownews" class="com.health.action.NewsAction" scope="prototype">
         <property name="newsservice" ref="newss"></property>
     </bean>
+    <bean id="regA" class="com.health.action.RegisterAction" scope="prototype">
+        <property name="userservice" ref="users"></property>
+    </bean>
 	</beans>
