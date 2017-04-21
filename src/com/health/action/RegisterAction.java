@@ -5,18 +5,10 @@ import com.health.service.UserService;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-@SuppressWarnings("serial")
+@SuppressWarnings({ "serial", "rawtypes" })
 public class RegisterAction extends ActionSupport implements ModelDriven {
-	private String result;
 	private UserService userservice;
 
-	public String getResult() {
-		return result;
-	}
-
-	public void setResult(String result) {
-		this.result = result;
-	}
 
 	private User user;
 
@@ -40,10 +32,17 @@ public class RegisterAction extends ActionSupport implements ModelDriven {
 	}
 
 	public String register() {
+		try{
 		if (userservice.register(user) == true)
 			return SUCCESS;
 		else
 			return INPUT;
+		}
+		catch(org.springframework.dao.DataIntegrityViolationException e ){
+			return INPUT;
+		}
+			
+		
 
 	}
 

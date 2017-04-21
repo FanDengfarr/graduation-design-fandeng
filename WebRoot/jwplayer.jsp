@@ -24,7 +24,7 @@
     $(function() {  
         thePlayer = jwplayer('container').setup({  
             flashplayer: 'jwplayer/jwplayer.flash.swf',  
-            file: 'jwplayer/luo.mp4',  
+            file: 'jwplayer/urman.mp4',  
             width: 500,  
             height: 350,  
             dock: false  

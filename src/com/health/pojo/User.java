@@ -27,6 +27,12 @@ public class User implements java.io.Serializable {
 	public User() {
 	}
 
+	/** minimal constructor */
+	public User(String username, String name) {
+		this.username = username;
+		this.name = name;
+	}
+
 	/** full constructor */
 	public User(String username, String password, String state,
 			String actiCode, String tokenExptime, String name, Set comments,
