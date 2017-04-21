@@ -69,7 +69,12 @@
 					
 									</ul>
 								</li>
-								<li><a href="about.jsp">关于</a></li>
+								<li><a href="about.jsp">关于</a>
+								 <ul class="fh5co-sub-menu">
+									 	<li><img src="images/jiankangmeishishare.jpg" alt="微信订阅号二维码" /></li>
+									 	<li><small>微信公众号:jiankangmeishishare</small></li>
+									</ul>
+								</li>
 								<li><a href="blog.jsp">更新日志</a></li>
 								<s:if test="#session.username==''||#session.username==null">
 								<li><a href="user_login.jsp">登录</a></li>
@@ -77,7 +82,7 @@
 								<s:else>
 								<li><a href="user_login.jsp">${session.username }</a>
 								 <ul class="fh5co-sub-menu">
-									 	<li><a href="user_Index.jsp">个人主页</a></li>				
+									 	<li><a href="user/user_index.jsp">个人主页</a></li>				
 									 	<li><a href="Login!logout">注销</a></li>				
 								</ul>
 								
