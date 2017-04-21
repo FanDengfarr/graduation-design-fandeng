@@ -145,7 +145,11 @@
 	<script src="js/main.js"></script>
 <script type="text/javascript">
 function checkPwd(){
-	if(document.form1.password.value!=document.form1.repassword.value){
+	if(document.form1.password.value==""||document.form1.repassword.value==""){
+		alert("密码不能为空！");
+		return false;
+	}
+	else if(document.form1.password.value!=document.form1.repassword.value){
 		alert("两次密码输入不一致！");
 		return false;
 	}
