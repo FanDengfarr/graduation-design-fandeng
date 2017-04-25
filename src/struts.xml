@@ -25,6 +25,10 @@
         <action name="HotNews" class="hotnews" method="show">
             <result name="success">/hotnews_list.jsp</result>
         </action>
+        <action name="User" class="userA" method="changePass">
+            <result name="input">./user/changePass.jsp</result>
+            <result name="success">./user/myInfo.jsp</result>
+        </action>
        
     </package>
 </struts>    

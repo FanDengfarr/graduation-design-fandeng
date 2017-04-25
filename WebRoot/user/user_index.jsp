@@ -31,13 +31,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="col-md-2">  
                         <div class="panel panel-default">  
                             <div class="panel-heading">  
-                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  
+                                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>  
                             </div>  
                             <!-- 导航栏 -->                             
                             <div class="list-group">  
                       <ul class="nav nav-pills nav-stacked" role="tablist">
+                      <li class="dropdown">
+                               <a href="user/user_index.jsp" class="glyphicon glyphicon-user" >
+                               	我的主页 
+                               </a>
+                           
+                           </li>
                             <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <a href="#" class="glyphicon glyphicon-th-list" data-toggle="dropdown">
                                                               文章管理 <b class="caret"></b>
                                </a>
                                <ul class="dropdown-menu">
@@ -46,14 +52,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                </ul>
                            </li>
                        <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <a href="#" class="glyphicon glyphicon-lock" data-toggle="dropdown">
                                                              账号管理 <b class="caret"></b>
                                </a>
                                <ul class="dropdown-menu">
+                               <li><a href="user/myInfo.jsp">个人信息</a></li>
                                <li><a href="user/changePass.jsp">密码重置</a></li>
                                <li><a href="user/changeName.jsp">修改昵称</a></li>
                                </ul>
-                      </li>                         
+                      </li> 
+                       <li class="dropdown">
+                               <a href="index.jsp" class="glyphicon glyphicon-home" >
+                                                              返回主页 
+                               </a>
+                           
+                           </li>                        
    			         </ul>
                                 </div>  
                         </div>  
@@ -62,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="col-md-10">  
                         <div class="panel panel-default">  
                             <div class="panel-heading">  
-                                <h4>展示点什么好</h4>  
+                                <h4>个人动态展示</h4>  
                             </div>  
   
                             <div class="panel-body">  
@@ -85,9 +98,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>  
     </div>  
   
-    <footer class="copyright">  
-        Copyright &copyright; 1995-2016, DreamBoy.NET, All Rights Reserved  
-    </footer>  
+  
   </body>
  
   <script src="js/jquery-1.7.2.min.js"></script>

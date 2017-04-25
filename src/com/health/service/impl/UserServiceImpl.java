@@ -27,4 +27,9 @@ public class UserServiceImpl implements UserService {
 			return false;
 	}
 
+	public boolean changeName(User user) {
+		userdao.update(user);
+		return true;
+	}
+
 }

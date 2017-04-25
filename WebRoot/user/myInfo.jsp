@@ -31,10 +31,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="col-md-2">  
                         <div class="panel panel-default">  
                             <div class="panel-heading">  
-                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  
+                                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>  
                             </div>  
                             <!-- 导航栏 -->                             
-                           <div class="list-group">  
+                            <div class="list-group">  
                       <ul class="nav nav-pills nav-stacked" role="tablist">
                       <li class="dropdown">
                                <a href="user/user_index.jsp" class="glyphicon glyphicon-user" >
@@ -75,37 +75,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="col-md-10">  
                         <div class="panel panel-default">  
                             <div class="panel-heading">  
-                                <h4>重置密码</h4>  
+                                <h4>个人信息</h4>  
                             </div>  
   
                             <div class="panel-body">  
-                                <form method="post" action="user.action" class="form-horizontal">  
-                                    <div class="form-group">  
-                                        <label for="article-title" class="col-sm-2 control-label">旧密码</label>  
-                                        <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-title" placeholder="请输入原来的密码" name="password">  
-                                        </div>  
-                                    </div>  
+                                <form method="post" action="article.add.handle.php" class="form-horizontal">  
+                                   
   
-                                    <div class="form-group">  
-                                        <label for="article-author" class="col-sm-2 control-label">新密码</label>  
-                                        <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-author" placeholder="请输入新密码" name="newPass">  
-                                        </div>  
-                                    </div>  
+                                   
   
-                                    <div class="form-group">  
-                                        <label for="article-author" class="col-sm-2 control-label">确认新密码</label>  
-                                        <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-author" placeholder="请确认新密码" name="newPass1">  
-                                        </div>  
-                                    </div> 
+                                 
   
-                                    <div class="form-group">  
-                                        <div class="col-sm-offset-2 col-sm-10">  
-                                            <button type="submit" class="btn btn-default">提交</button>  
-                                        </div>  
-                                    </div>  
+                                   
+  
+     
                                 </form>  
                             </div>  
                         </div>  
@@ -114,6 +97,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div>  
         </div>  
     </div>  
+  
+  
   </body>
  
   <script src="js/jquery-1.7.2.min.js"></script>
