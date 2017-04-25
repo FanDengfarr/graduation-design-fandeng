@@ -13,7 +13,7 @@
 	<title>健康饮食分享平台jiankangmeishishare</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="keywords" conten                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           t="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -59,7 +59,7 @@
 									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="ListNews!list" >文章列表</a></li>
-										<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">今日最热</a></li>
+										<li><a href="HotNews!list">今日最热</a></li>
 									</ul>
 								</li>
 								<li>

@@ -2,12 +2,7 @@
 <%@taglib prefix="s" uri="/struts-tags" %>
 
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE HTML>
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +40,7 @@
 	<!-- Superfish -->
 	<link rel="stylesheet" href="css/superfish.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mystyle.css">
 
 
 	<!-- Modernizr JS -->
@@ -63,37 +58,24 @@
 		<%@ include file="header.jsp" %>
 		
 
-		<div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
-				<div class="desc animate-box">
-					<h2>快来分享你的健康饮食小秘诀吧</h2>
-					<span>此处可以是轮播图 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">Bootstrap模板</a></span>
-					<span><a class="btn btn-primary" href="#" >Get Started</a></span>
-				</div>
-			</div>
-			
-		</div>
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+		<div class="fh5co-hero">		
+		<div class="container">
 		<!-- end:header-top -->
 		<div id="fh5co-work-section">
-		  
+		  <table border="0" width="100%">
+		  <th>热门文章</th>
+		  <th>浏览次数</th>
 		<s:iterator value="listNews">
-		<h1 align="center"style="color:red"><s:property value="title"/></td></h1>
-		<table border="0" width="100%">
-		<tr>
-		   	<td align="center">作者：<s:property value="author"/></td>
-			<td>时间：<s:property value="createtime"/></td>
+		<tr><td align="left"><a href="ShowNews?nid=<s:property value="%{nid}"/>"><s:property value="title"/></td>
+		   
+			<td><s:property value="count"/></td>
 		</tr> 
-		</table>
-		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<s:property value="context"/>
-		</p>
 		</s:iterator>
+		</table>
 		
-		 
 		</div>
-	
+	</div>
+	</div>
 		<!-- fh5co-blog-section -->
 		<footer>
 			<div id="footer">
@@ -115,7 +97,7 @@
 		</footer>
 	
 
-	</div>
+	
 	<!-- END fh5co-page -->
 
 	</div>

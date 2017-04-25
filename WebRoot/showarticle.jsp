@@ -45,6 +45,7 @@
 		<table border="0" width="100%">
 		<tr>
 		   	<td>作者：<s:property value="author"/></td>
+		   	<td>浏览次数:<s:property value="count" /></td>
 			<td align="right">时间：<s:property value="createtime"/></td>
 		</tr> 
 		</table>

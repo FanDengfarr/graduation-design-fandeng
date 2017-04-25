@@ -60,6 +60,7 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 		return null;
 	}
 
+	
 	public int getAllRowCount(String hql) {    
 		return this.getHibernateTemplate().find(hql).size();    
 		}    

@@ -22,6 +22,9 @@
           <result name="input">/user_register.jsp</result>
             <result name="success">/user_login.jsp</result>
         </action>
+        <action name="HotNews" class="hotnews" method="show">
+            <result name="success">/hotnews_list.jsp</result>
+        </action>
        
     </package>
 </struts>    

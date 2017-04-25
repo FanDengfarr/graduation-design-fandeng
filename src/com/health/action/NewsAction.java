@@ -11,20 +11,13 @@ import com.health.service.NewsService;
 import com.opensymphony.xwork2.*;
 
 import org.apache.struts2.interceptor.*;
+import org.jboss.weld.context.ApplicationContext;
 
 public class NewsAction extends ActionSupport{
     private NewsService newsservice;
 	private News news;
 	private List<News> listNews;
 	private Integer nid;
-	private Integer count;
-    public Integer getCount() {
-		return count;
-	}
-
-	public void setCount(Integer count) {
-		this.count = count;
-	}
 
 	public Integer getNid() {
 		return nid;
@@ -61,23 +54,21 @@ public class NewsAction extends ActionSupport{
 	}
 
 	public String show(){
-		ActionContext ctx=ActionContext.getContext();
-		
 		this.listNews=newsservice.findById(nid);
-		/*for(int i=0;i<listNews.size();i++){
-		    news.setNid(listNews.get(0));
-		    news.setUid(listNews.get(1));
-		    news.setTitle(listNews.get(2));
-		}
-		Integer count=(Integer)ctx.getApplication().get(news.getCount());
-		if(count == null)
-			count = 1;
+		ActionContext ctx=ActionContext.getContext();
+		for(int i=0;i<listNews.size();i++){
+		if(listNews.get(i).getCount()!=null)
+		listNews.get(i).setCount(listNews.get(0).getCount()+1);
 		else{
-			count=count+1;
-			newsservice.save(news);
+			listNews.get(i).setCount(1);
+			
 		}
-		*/
+		newsservice.update(listNews.get(i));
+		}
+		
+		
 		return SUCCESS;
         
     }
+		
 }

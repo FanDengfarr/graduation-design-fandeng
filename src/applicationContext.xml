@@ -87,4 +87,7 @@
     <bean id="regA" class="com.health.action.RegisterAction" scope="prototype">
         <property name="userservice" ref="users"></property>
     </bean>
+     <bean id="hotnews" class="com.health.action.HotNewsAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
+    </bean>
 	</beans>
