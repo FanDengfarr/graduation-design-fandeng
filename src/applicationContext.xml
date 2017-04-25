@@ -90,4 +90,7 @@
      <bean id="hotnews" class="com.health.action.HotNewsAction" scope="prototype">
         <property name="newsservice" ref="newss"></property>
     </bean>
+     <bean id="userA" class="com.health.action.UserAction" scope="prototype">
+        <property name="userservice" ref="users"></property>
+    </bean>
 	</beans>
