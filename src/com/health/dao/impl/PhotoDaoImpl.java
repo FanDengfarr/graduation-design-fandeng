@@ -1,9 +1,9 @@
 package com.health.dao.impl;
 
 import java.util.List;
-
 import com.health.common.impl.BaseDaoHibernate3;
 import com.health.dao.PhotoDao;
+import com.health.pojo.News;
 import com.health.pojo.Photo;
 
 public class PhotoDaoImpl extends BaseDaoHibernate3 implements PhotoDao {
@@ -40,6 +40,13 @@ public class PhotoDaoImpl extends BaseDaoHibernate3 implements PhotoDao {
 			return photos.get(0);
 		}
 		return null;
+	}
+
+	public List<Photo> findByNew(News news)
+	{
+		return (List<Photo>)getHibernateTemplate()
+			.find("from Photo as p where "
+			+ "p.news = ?" , news);
 	}
 
 }

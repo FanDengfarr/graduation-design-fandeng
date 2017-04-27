@@ -39,9 +39,12 @@
 			<div class="container">
 				
 <!-- 文章样式排版 -->		
+ 
+		
      <div class="article">
 		<s:iterator value="listNews">
 		<h1 align="center"><s:property value="title"/></td></h1>
+		
 		<table border="0" width="100%">
 		<tr>
 		   	<td>作者：<s:property value="author"/></td>
@@ -49,11 +52,18 @@
 			<td align="right">时间：<s:property value="createtime"/></td>
 		</tr> 
 		</table>
+		<div class="article">
+		<s:iterator value="listphoto">
+		<p><img width="600px" height="300px "src="<s:property value="purl"/>"></p>
+		</s:iterator>
+		</div>
 		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		<s:property value="context"/>
 		</p>
 		</s:iterator>
 		</div>
+		
+		
 <!-- 排版结束 -->
 <!-- 评论区 -->
 <div class="comment">

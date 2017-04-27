@@ -2,6 +2,7 @@ package com.health.dao;
 
 import java.util.List;
 
+import com.health.pojo.News;
 import com.health.pojo.Photo;
 
 public interface PhotoDao {
@@ -18,4 +19,9 @@ public interface PhotoDao {
 	List<Photo> findAll();
 
 	Photo findByName(String name);
+
+
+	List<Photo> findByNew(News news);
+
+	
 }

@@ -61,6 +61,7 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 	}
 
 	
+	
 	public int getAllRowCount(String hql) {    
 		return this.getHibernateTemplate().find(hql).size();    
 		}    
@@ -77,11 +78,11 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 		Query q = session.createQuery(hql);    
 		q.setFirstResult(offset);    
 		q.setMaxResults(length);    
-		List<News> list = q.list();    
-		System.out.println(list.size());    
+		List<News> list = q.list();      
 		session.close();    
 		return list;    
 	
 	
 }
+		
 }

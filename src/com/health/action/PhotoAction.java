@@ -15,58 +15,49 @@ import com.opensymphony.xwork2.*;
 import org.apache.struts2.interceptor.*;
 import org.jboss.weld.context.ApplicationContext;
 
-public class NewsAction extends ActionSupport{
-	private PhotoService photoservice;
+public class PhotoAction extends ActionSupport{
+    private  PhotoService photoservice;
 	private Photo photo;
 	private List<Photo> listphoto;
-    private NewsService newsservice;
+	private NewsService newsservice;
 	private News news;
 	private List<News> listNews;
 	private Integer nid;
-
-	public Integer getNid() {
-		return nid;
-	}
 
 	public PhotoService getPhotoservice() {
 		return photoservice;
 	}
 
+
 	public void setPhotoservice(PhotoService photoservice) {
 		this.photoservice = photoservice;
 	}
+
 
 	public Photo getPhoto() {
 		return photo;
 	}
 
+
 	public void setPhoto(Photo photo) {
 		this.photo = photo;
 	}
+
 
 	public List<Photo> getListphoto() {
 		return listphoto;
 	}
 
+
 	public void setListphoto(List<Photo> listphoto) {
 		this.listphoto = listphoto;
 	}
 
-	public void setNid(Integer nid) {
-		this.nid = nid;
-	}
-
-	public List<News> getListNews() {
-		return listNews;
-	}
-
-	public void setListNews(List<News> listNews) {
-		this.listNews = listNews;
-	}
 
 	public NewsService getNewsservice() {
 		return newsservice;
 	}
+
 
 	public void setNewsservice(NewsService newsservice) {
 		this.newsservice = newsservice;
@@ -82,18 +73,32 @@ public class NewsAction extends ActionSupport{
 		this.news = news;
 	}
 
+
+	public List<News> getListNews() {
+		return listNews;
+	}
+
+
+	public void setListNews(List<News> listNews) {
+		this.listNews = listNews;
+	}
+
+
+	public Integer getNid() {
+		return nid;
+	}
+
+
+	public void setNid(Integer nid) {
+		this.nid = nid;
+	}
+
+
 	public String show(){
 		this.listNews=newsservice.findById(nid);
 		ActionContext ctx=ActionContext.getContext();
 		for(int i=0;i<listNews.size();i++){
-			this.listphoto=photoservice.findByNew(listNews.get(i));
-		if(listNews.get(i).getCount()!=null)
-		listNews.get(i).setCount(listNews.get(0).getCount()+1);
-		else{
-			listNews.get(i).setCount(1);
-			
-		}
-		newsservice.update(listNews.get(i));
+		this.listphoto=photoservice.findByNew(listNews.get(i));		
 		}
 		
 		

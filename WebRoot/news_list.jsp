@@ -66,7 +66,7 @@
 		  <th>文章列表</th>
 		  <th>创建时间</th>
 		<s:iterator value="listNews">
-		<tr><td align="left"><a href="ShowNews?nid=<s:property value="%{nid}"/>"><s:property value="title"/></td>
+		<tr><td align="left"><a href="ShowNews!show?nid=<s:property value="%{nid}"/>"><s:property value="title"/></td>
 		   
 			<td><s:property value="createtime"/></td>
 		</tr> 

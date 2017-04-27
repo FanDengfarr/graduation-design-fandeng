@@ -57,6 +57,12 @@
             <ref bean="sessionFactory" />
         </property>
     </bean>
+    
+     <bean id="photod" class="com.health.dao.impl.PhotoDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
 
     <!-- service注入dao id为下面的ref class为service实现类 -->
     <bean id="users" class="com.health.service.impl.UserServiceImpl">
@@ -68,6 +74,9 @@
     </bean>
     <bean id="newss" class="com.health.service.impl.NewsServiceImpl">
         <property name="newsdao" ref="newsd"></property>
+    </bean>
+    <bean id="photos" class="com.health.service.impl.PhotoServiceImpl">
+        <property name="photodao" ref="photod"></property>
     </bean>
 
     <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
@@ -83,6 +92,7 @@
     </bean>
     <bean id="shownews" class="com.health.action.NewsAction" scope="prototype">
         <property name="newsservice" ref="newss"></property>
+        <property name="photoservice" ref="photos"></property>
     </bean>
     <bean id="regA" class="com.health.action.RegisterAction" scope="prototype">
         <property name="userservice" ref="users"></property>
@@ -93,4 +103,5 @@
      <bean id="userA" class="com.health.action.UserAction" scope="prototype">
         <property name="userservice" ref="users"></property>
     </bean>
+    
 	</beans>

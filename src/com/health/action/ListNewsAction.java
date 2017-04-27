@@ -76,5 +76,4 @@ public class ListNewsAction extends ActionSupport{
     this.listNews = this.pagebean.getList(); //获取数据    
     return SUCCESS;    
     }    
-	
 }

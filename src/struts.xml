@@ -29,6 +29,8 @@
             <result name="input">./user/changePass.jsp</result>
             <result name="success">./user/myInfo.jsp</result>
         </action>
-       
+       <action name="ShowPhoto" class="photoa" method="show">
+            <result name="success">./showphoto.jsp</result>
+        </action>
     </package>
 </struts>    
