@@ -65,7 +65,8 @@
 								<li>
 									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="jwplayer.jsp">player</a></li>
+									 	<li><a href="jwplayer.jsp">player</a></li>									 	
+										<li><a href="ListVideo!list">视频列表</a></li>
 									</ul>
 								</li>
 								<li><a href="about.jsp">关于</a>
@@ -82,7 +83,7 @@
 								<li><a href="user_login.jsp">${session.username }</a>
 								 <ul class="fh5co-sub-menu">
 									 	<li><a href="user/user_index.jsp">个人主页</a></li>				
-									 	<li><a href="Login!logout">注销</a></li>				
+									 	<li><a href="Login!logout">注销</a></li>					
 								</ul>
 								
 								</li>

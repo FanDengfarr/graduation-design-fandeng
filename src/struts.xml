@@ -32,5 +32,8 @@
        <action name="ShowPhoto" class="photoa" method="show">
             <result name="success">./showphoto.jsp</result>
         </action>
+        <action name="ListVideo" class="videoa" method="list">
+            <result name="success">./video_list.jsp</result>
+        </action>
     </package>
 </struts>    

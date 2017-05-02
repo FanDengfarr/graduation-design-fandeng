@@ -2,7 +2,8 @@ package com.health.pojo;
 import com.health.pojo.News;
 import java.util.List;    
 public class Pagebean {    
-private List<News> list;  //要返回的某一页的记录列表    
+private List<News> list; 
+private List<Video> listvideo;//要返回的某一页的记录列表    
 private int allRow; //总记录数    
 private int totalPage;  //总页数    
 private int currentPage;  //当前页    
@@ -11,6 +12,7 @@ private boolean isFirstPage;  //是否为当前第一页
 private boolean isLastPage;  //是否为最后一页    
 private boolean hasPreviousPage;  //是否有前一页    
 private boolean hasNextPage;  //是否有下一页    
+
 
 /**   
  * 初始化分页信息   
@@ -49,6 +51,12 @@ return offset;
 public static int countCurrentPage(int page){    
 final int curpage = (page == 0 ? 1 : page);    
 return curpage;    
+}
+public List<Video> getListvideo() {
+	return listvideo;
+}
+public void setListvideo(List<Video> listvideo) {
+	this.listvideo = listvideo;
 }
 public List<News> getList() {
 	return list;

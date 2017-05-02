@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>云盘页面</title>
+<title>美食视频播放</title>
 <link rel="stylesheet" href="css/style.css">
 
 <script type="text/javascript" src="js/jquery.min.js"></script>

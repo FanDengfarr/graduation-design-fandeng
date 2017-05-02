@@ -34,7 +34,8 @@
 				<value>com/health/pojo/User.hbm.xml</value>
 				<value>com/health/pojo/News.hbm.xml</value>
 				<value>com/health/pojo/Photo.hbm.xml</value>
-				<value>com/health/pojo/Comment.hbm.xml</value></list>
+				<value>com/health/pojo/Comment.hbm.xml</value>
+				<value>com/health/pojo/Video.hbm.xml</value></list>
 		</property></bean>
 		
 
@@ -64,6 +65,11 @@
         </property>
     </bean>
 
+    <bean id="videod" class="com.health.dao.impl.VideoDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
     <!-- service注入dao id为下面的ref class为service实现类 -->
     <bean id="users" class="com.health.service.impl.UserServiceImpl">
         <property name="userdao" ref="userd"></property>
@@ -77,6 +83,9 @@
     </bean>
     <bean id="photos" class="com.health.service.impl.PhotoServiceImpl">
         <property name="photodao" ref="photod"></property>
+    </bean>
+     <bean id="videos" class="com.health.service.impl.VideoServiceImpl">
+        <property name="videodao" ref="videod"></property>
     </bean>
 
     <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
@@ -102,6 +111,9 @@
     </bean>
      <bean id="userA" class="com.health.action.UserAction" scope="prototype">
         <property name="userservice" ref="users"></property>
+    </bean>
+    <bean id="videoa" class="com.health.action.ListVideoAction" scope="prototype">
+        <property name="videoservice" ref="videos"></property>
     </bean>
     
 	</beans>

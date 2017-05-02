@@ -24,8 +24,13 @@
 			<generator class="increment"></generator>
 		</primary-key>
 	</table>
-<table name="comment" catalog="health"
-	class="com.health.pojo.Comment">
+	<table name="comment" catalog="health"
+		class="com.health.pojo.Comment">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+<table name="video" catalog="health" class="com.health.pojo.Video">
 	<primary-key>
 		<generator class="increment"></generator>
 	</primary-key>
