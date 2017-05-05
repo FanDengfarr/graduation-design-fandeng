@@ -61,15 +61,32 @@
 		<s:property value="context"/>
 		</p>
 		</s:iterator>
+		
+		
 		</div>
 		
 		
 <!-- 排版结束 -->
 <!-- 评论区 -->
 <div class="comment">
-<p>评论人XXX</p>
+<p>评论</p>
+<s:iterator value="listcomment">
+		<table border="0" width="100%">
+		<tr>
+		   	<td>评论人：<s:property value="comname"/></td>
+		   	<td>评论内容:<s:property value="context" /></td>
+			<td align="right">时间：<s:property value="comtime"/></td>
+		</tr> 
+		</table>
+		</s:iterator>
  <div class="col-lg-12">
-<input type="text" name="username" placeholder="请输入评论" class="form-control" >
+ <s:iterator value="listNews">
+ <form action="ShowNews!show?nid=<s:property value="nid" />" method="post">
+<input type="text" name="context" placeholder="请输入评论" class="form-control" value="">
+<input type="hidden" name="opttype" value="comment" >
+<input type="submit"value="回复">
+</form>
+</s:iterator>
 </div>
 </div>
 			</div>	

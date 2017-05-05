@@ -37,4 +37,7 @@ public class VideoServiceImpl implements VideoService {
 		return pagebean;    
 		}    
 	
+	public List<Video> findById(Integer id) {
+        return videodao.findById(id);
+    }
 }

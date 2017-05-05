@@ -66,4 +66,14 @@ public class VideoDaoImpl extends BaseDaoHibernate3 implements VideoDao {
 		session.close();    
 		return list;    
 		}
+		public List<Video> findById(Integer id)
+		{
+			List<Video> videos = (List<Video>)getHibernateTemplate()
+				.find("from Video where vid = ? " , id);
+			if (videos!= null && videos.size() >= 1)
+			{
+				return videos;
+			}
+			return null;
+		}
 }

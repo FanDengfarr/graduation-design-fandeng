@@ -1,7 +1,6 @@
 package com.health.dao;
 
 import java.util.List;
-
 import com.health.pojo.Video;;
 
 public interface VideoDao {
@@ -18,6 +17,7 @@ public interface VideoDao {
 	List<Video> findAll();
 
 	Video findByName(String name);
+	List<Video> findById(Integer id);
 	public List<Video> queryForPage(final String hql,final int offset,final int length);    
 	/**   
 	 * 查询所有的记录数   

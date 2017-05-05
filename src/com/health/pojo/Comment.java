@@ -15,6 +15,7 @@ public class Comment implements java.io.Serializable {
 	private News news;
 	private String context;
 	private Timestamp comtime;
+	private String comname;
 
 	// Constructors
 
@@ -23,11 +24,13 @@ public class Comment implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Comment(User user, News news, String context, Timestamp comtime) {
+	public Comment(User user, News news, String context, Timestamp comtime,
+			String comname) {
 		this.user = user;
 		this.news = news;
 		this.context = context;
 		this.comtime = comtime;
+		this.comname = comname;
 	}
 
 	// Property accessors
@@ -70,6 +73,14 @@ public class Comment implements java.io.Serializable {
 
 	public void setComtime(Timestamp comtime) {
 		this.comtime = comtime;
+	}
+
+	public String getComname() {
+		return this.comname;
+	}
+
+	public void setComname(String comname) {
+		this.comname = comname;
 	}
 
 }

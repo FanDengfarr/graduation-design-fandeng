@@ -35,5 +35,8 @@
         <action name="ListVideo" class="videoa" method="list">
             <result name="success">./video_list.jsp</result>
         </action>
+        <action name="ShowVideo" class="videoA" method="show">
+            <result name="success">./showvideo.jsp</result>
+        </action>
     </package>
 </struts>    

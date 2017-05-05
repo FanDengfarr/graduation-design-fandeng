@@ -67,7 +67,7 @@
 		 <s:if test="(#video.index+1) % 3 == 1">
  			<tr>
   		 </s:if>
-		  <td align="center"><a href=""/>
+		  <td align="center"><a href="ShowVideo!show?vid=<s:property value="%{vid}"/>">
 		     <img width="180px" height="100px "src="<s:property value="vpurl"/>">
 		     <br>
 		     <s:property value="vname"/>

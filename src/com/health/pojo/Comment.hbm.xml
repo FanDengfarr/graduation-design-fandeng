@@ -22,5 +22,8 @@
         <property name="comtime" type="java.sql.Timestamp">
             <column name="comtime" length="19" />
         </property>
+        <property name="comname" type="java.lang.String">
+            <column name="comname" length="30" />
+        </property>
     </class>
 </hibernate-mapping>

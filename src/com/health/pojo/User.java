@@ -18,8 +18,8 @@ public class User implements java.io.Serializable {
 	private String actiCode;
 	private String tokenExptime;
 	private String name;
-	private Set comments = new HashSet(0);
 	private Set newses = new HashSet(0);
+	private Set comments = new HashSet(0);
 
 	// Constructors
 
@@ -35,16 +35,16 @@ public class User implements java.io.Serializable {
 
 	/** full constructor */
 	public User(String username, String password, String state,
-			String actiCode, String tokenExptime, String name, Set comments,
-			Set newses) {
+			String actiCode, String tokenExptime, String name, Set newses,
+			Set comments) {
 		this.username = username;
 		this.password = password;
 		this.state = state;
 		this.actiCode = actiCode;
 		this.tokenExptime = tokenExptime;
 		this.name = name;
-		this.comments = comments;
 		this.newses = newses;
+		this.comments = comments;
 	}
 
 	// Property accessors
@@ -105,20 +105,20 @@ public class User implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public Set getComments() {
-		return this.comments;
-	}
-
-	public void setComments(Set comments) {
-		this.comments = comments;
-	}
-
 	public Set getNewses() {
 		return this.newses;
 	}
 
 	public void setNewses(Set newses) {
 		this.newses = newses;
+	}
+
+	public Set getComments() {
+		return this.comments;
+	}
+
+	public void setComments(Set comments) {
+		this.comments = comments;
 	}
 
 }
