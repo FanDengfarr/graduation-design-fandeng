@@ -56,14 +56,14 @@
 									<a href="index.jsp">主页</a>
 								</li>
 								<li>
-									<a href="portfolio.jsp" class="fh5co-sub-ddown">精华</a>
+									<a href="#" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="ListNews!list" >文章列表</a></li>
 										<li><a href="HotNews!list">今日最热</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="services.jsp" class="fh5co-sub-ddown">服务</a>
+									<a href="#" class="fh5co-sub-ddown">服务</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="jwplayer.jsp">player</a></li>									 	
 										<li><a href="ListVideo!list">视频列表</a></li>
@@ -72,7 +72,7 @@
 								<li><a href="about.jsp">关于</a>
 								 <ul class="fh5co-sub-menu">
 									 	<li><img src="images/jiankangmeishishare.jpg" alt="微信订阅号二维码" /></li>
-									 	<li><small>微信公众号:jiankangmeishishare</small></li>
+									 	<li><center><small>订阅号:jiankangmeishishare</small></center></li>
 									</ul>
 								</li>
 								<li><a href="blog.jsp">更新日志</a></li>
