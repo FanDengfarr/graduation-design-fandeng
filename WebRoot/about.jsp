@@ -63,8 +63,8 @@
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/about-image.jpg);">
 				<div class="desc animate-box">
-					<h2>About Us</h2>
-					<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a></span>
+					<h2>关于我们</h2>
+					<span>此模板由 <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">Freehtml5</a>提供</span>
 				</div>
 			</div>
 		</div>
@@ -94,33 +94,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- END fh5co-about -->
-		<div id="fh5co-content-section" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>What Others Say</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="fh5co-testimonial text-center animate-box">
-							<figure>
-								<img src="images/user-1.jpg" alt="user">
-							</figure>
-							<blockquote>
-								<p>“Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.”</p>
-							</blockquote>
-							<span>Steve Jobs, Apple Inc.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- fh5co-content-section -->
 		<div id="fh5co-services-section">
 			<div class="container">
 				<div class="row">

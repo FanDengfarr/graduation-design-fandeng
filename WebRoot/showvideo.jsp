@@ -5,31 +5,49 @@
 <head>
 <meta charset="utf-8">
 <title>美食视频播放</title>
-<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="jwplayer/jwplayer.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/date.js"></script>
-<script>jwplayer.key="zlHRQXtPCdjYZ/fOwyTDKVNYOJEv+KtLFUIUyw==";</script>
+	<link rel="stylesheet" href="css/mystyle.css">
+
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="jwplayer/jwplayer.js" type="text/javascript"></script> 
+	<script type="text/javascript" src="js/date.js"></script>
+	<script>jwplayer.key="zlHRQXtPCdjYZ/fOwyTDKVNYOJEv+KtLFUIUyw==";</script>
+	
 </head>
 
 <body>
- 
+ <div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<%@ include file="header.jsp" %>
+		<div class="fh5co-hero">		
+		<div class="container">
 <div class="content" id="con_one_6" style="display:block;">
-  <div class="meduo">
-  </div>
+  <div class="meduo">  
   <s:iterator value="listvideo">
-		<table border="0" width="100%">
+	<table border="0" width="50%" height="100" align="center" >
 		<tr>
 		  	<td>作者：<s:property value="vname"/></td>
-		   	<td>作者：<s:property value="vurl"/></td>
-		   	<td>浏览次数:<s:property value="vcontext" /></td>
+		   	<td>来源：<s:property value="vurl"/></td>
+		   	<td>浏览次数:<s:property value="vcontext" />次</td>
 		</tr> 
 		
-	</table>	
-		
-
-<script type="text/javascript">  
+	</table>
+</div>	
+	<script type="text/javascript">  
     var thePlayer;  //保存当前播放器以便操作  
     $(function() {  
         thePlayer = jwplayer('container').setup({  
@@ -91,16 +109,22 @@
     });  
 </script>  
 
+
 </s:iterator> 
-<div id="container"></div>  
+<!-- 视频播放器位置 -->
+<center><div id="container"></div> 
 <input type="button" class="player-play" value="播放" />  
 <input type="button" class="player-stop" value="停止" />  
 <input type="button" class="player-status" value="取得状态" />  
 <input type="button" class="player-current" value="当前播放秒数" />  
 <input type="button" class="player-goto" value="转到第30秒播放" />  
 <input type="button" class="player-length" value="视频时长(秒)" />  
+</center>
 </div>
-
+</div>
+</div>
+</div>
+</div>
 
 </body>
 </html>

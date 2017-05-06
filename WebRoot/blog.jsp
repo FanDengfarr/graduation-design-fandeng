@@ -47,7 +47,7 @@
 
 		<div class="fh5co-hero fh5co-hero-2">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/work-3.jpg);">
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/blog-4.jpg);">
 				<div class="desc animate-box">
 				<span>本网页记录了网站搭建过程以供学习和交流</span>
 				<span>项目源码请移步 <a href="https://github.com/FanDengfarr/graduation-design-fandeng" target="_blank" class="fh5co-site-name">GitHub</a></span>
