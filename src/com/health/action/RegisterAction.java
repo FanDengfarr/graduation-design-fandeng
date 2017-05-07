@@ -9,7 +9,6 @@ import com.opensymphony.xwork2.ModelDriven;
 public class RegisterAction extends ActionSupport implements ModelDriven {
 	private UserService userservice;
 
-
 	private User user;
 
 	public UserService getUserservice() {
@@ -32,17 +31,14 @@ public class RegisterAction extends ActionSupport implements ModelDriven {
 	}
 
 	public String register() {
-		try{
-		if (userservice.register(user) == true)
-			return SUCCESS;
-		else
+		try {
+			if (userservice.register(user) == true) {
+				return SUCCESS;
+			} else
+				return INPUT;
+		} catch (org.springframework.dao.DataIntegrityViolationException e) {
 			return INPUT;
 		}
-		catch(org.springframework.dao.DataIntegrityViolationException e ){
-			return INPUT;
-		}
-			
-		
 
 	}
 

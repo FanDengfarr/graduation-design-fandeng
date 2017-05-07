@@ -6,6 +6,7 @@
 		<primary-key>
 			<generator class="increment"></generator>
 		</primary-key>
+		<column name="regtime" exclude="true"></column>
 	</table>
 	<table name="admin" catalog="health"
 		class="com.health.pojo.Admin">
@@ -30,9 +31,10 @@
 			<generator class="increment"></generator>
 		</primary-key>
 	</table>
-<table name="video" catalog="health" class="com.health.pojo.Video">
-	<primary-key>
-		<generator class="increment"></generator>
-	</primary-key>
-</table>
+	<table name="video" catalog="health"
+		class="com.health.pojo.Video">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
 </hibernate-reverse-engineering>
