@@ -1,5 +1,6 @@
 package com.health.pojo;
 
+import java.security.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,7 @@ public class User implements java.io.Serializable {
 	private String actiCode;
 	private String tokenExptime;
 	private String name;
+	private Timestamp regtime;
 	private Set newses = new HashSet(0);
 	private Set comments = new HashSet(0);
 
@@ -103,6 +105,14 @@ public class User implements java.io.Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Timestamp getRegtime() {
+		return regtime;
+	}
+
+	public void setRegtime(Timestamp regtime) {
+		this.regtime = regtime;
 	}
 
 	public Set getNewses() {
