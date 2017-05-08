@@ -6,7 +6,7 @@
 		<primary-key>
 			<generator class="increment"></generator>
 		</primary-key>
-		<column name="regtime" exclude="true"></column>
+		<column name="regtime"></column>
 	</table>
 	<table name="admin" catalog="health"
 		class="com.health.pojo.Admin">

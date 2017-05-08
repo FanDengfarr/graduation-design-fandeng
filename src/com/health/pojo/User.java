@@ -1,6 +1,6 @@
 package com.health.pojo;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -37,14 +37,15 @@ public class User implements java.io.Serializable {
 
 	/** full constructor */
 	public User(String username, String password, String state,
-			String actiCode, String tokenExptime, String name, Set newses,
-			Set comments) {
+			String actiCode, String tokenExptime, String name,
+			Timestamp regtime, Set newses, Set comments) {
 		this.username = username;
 		this.password = password;
 		this.state = state;
 		this.actiCode = actiCode;
 		this.tokenExptime = tokenExptime;
 		this.name = name;
+		this.regtime = regtime;
 		this.newses = newses;
 		this.comments = comments;
 	}
@@ -108,7 +109,7 @@ public class User implements java.io.Serializable {
 	}
 
 	public Timestamp getRegtime() {
-		return regtime;
+		return this.regtime;
 	}
 
 	public void setRegtime(Timestamp regtime) {

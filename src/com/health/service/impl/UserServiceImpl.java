@@ -1,5 +1,7 @@
 package com.health.service.impl;
 
+import java.util.List;
+
 import com.health.dao.UserDao;
 import com.health.pojo.User;
 import com.health.service.UserService;
@@ -30,6 +32,11 @@ public class UserServiceImpl implements UserService {
 	public boolean changeName(User user) {
 		userdao.updateByUsername(user);
 		return true;
+	}
+
+	@Override
+	public List<User> findByName(String username) {		
+		return userdao.findByName(username);
 	}
 
 }

@@ -31,7 +31,7 @@ public class NewsServiceImpl implements NewsService{
 		return newsdao.findAll();
 	}
 	public Pagebean queryForPage(int pageSize, int page) {    
-		final String hql = "from News news order by news.createtime DESC"; //查询语句    
+		final String hql = "from News news where news.vip='yes' order by news.createtime DESC "; //查询语句    
 		int allRow = newsdao.getAllRowCount(hql);  //总记录数    
 		int totalPage = Pagebean.countTatalPage(pageSize, allRow); //总页数    
 		final int offset = Pagebean.countOffset(pageSize, page); //当前页开始记录    
@@ -52,7 +52,7 @@ public class NewsServiceImpl implements NewsService{
 		 newsdao.update(news);
 	}
 	public Pagebean queryForPageCount(int pageSize, int page) {    
-		final String hql = "from News news order by news.count DESC"; //查询语句    
+		final String hql = "from News news where news.vip='yes' order by news.count DESC "; //查询语句    
 		int allRow = newsdao.getAllRowCount(hql);  //总记录数    
 		int totalPage = Pagebean.countTatalPage(pageSize, allRow); //总页数    
 		final int offset = Pagebean.countOffset(pageSize, page); //当前页开始记录    
@@ -69,5 +69,9 @@ public class NewsServiceImpl implements NewsService{
 		pagebean.init();    
 		return pagebean;    
 		}    
+	public Integer save(News news){
+		return  newsdao.save(news);
+	}
+
 		  
 }

@@ -32,16 +32,16 @@
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
+		<div id="fh5co-page" >
 		<%@ include file="header.jsp" %>
 
 		<div class="fh5co-hero">
-			<div class="container">
+			<div class="container" style="border: 1px solid rgb(223, 223, 224);">
 				
 <!-- 文章样式排版 -->		
  
-		
-     <div class="article">
+		 
+     <div class="article" >
 		<s:iterator value="listNews">
 		<h1 align="center"><s:property value="title"/></td></h1>
 		

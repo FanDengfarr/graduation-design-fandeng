@@ -117,6 +117,10 @@
         <property name="photoservice" ref="photos"></property>
         <property name="commentservice" ref="comments"></property>
     </bean>
+    <bean id="newsmng" class="com.health.action.NewsMngAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
+        <property name="userservice" ref="users"></property>
+    </bean>
     <bean id="regA" class="com.health.action.RegisterAction" scope="prototype">
         <property name="userservice" ref="users"></property>
     </bean>

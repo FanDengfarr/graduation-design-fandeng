@@ -38,5 +38,11 @@
         <action name="ShowVideo" class="videoA" method="show">
             <result name="success">./showvideo.jsp</result>
         </action>
+         <action name="User1" class="userA" method="show">
+            <result name="success">./user/user_index.jsp</result>
+        </action>
+        <action name="Newsadd" class="newsmng" method="show">
+            <result name="success">./user/myArticleList.jsp</result>
+        </action>
     </package>
 </struts>    

@@ -19,7 +19,7 @@ public interface UserDao {
 
 	List<User> findByNameAndPass(String name, String pass);
 
-	User findByName(String name);
+	List<User> findByName(String username);
 
 	boolean login(String username, String password);
 

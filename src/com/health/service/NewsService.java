@@ -13,5 +13,6 @@ public interface NewsService {
 	 public List<News> findAll();
 	 public void update(News news);
 	 public Pagebean queryForPageCount(int pageSize,int page);
+	 public Integer save(News news);
 }
 	

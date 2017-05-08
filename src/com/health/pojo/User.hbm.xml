@@ -28,6 +28,9 @@
         <property name="name" type="java.lang.String">
             <column name="name" length="50" not-null="true" unique="true" />
         </property>
+        <property name="regtime" type="java.sql.Timestamp">
+            <column name="regtime" length="19" />
+        </property>
         <set name="newses" inverse="true">
             <key>
                 <column name="uid" />

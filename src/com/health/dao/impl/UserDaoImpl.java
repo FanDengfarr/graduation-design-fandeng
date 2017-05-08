@@ -37,12 +37,12 @@ public class UserDaoImpl extends BaseDaoHibernate3 implements UserDao {
 				new String[] { name, pass });
 	}
 
-	public User findByName(String name) {
+	public List<User> findByName(String username) {
 		@SuppressWarnings("unchecked")
 		List<User> users = (List<User>) getHibernateTemplate().find(
-				"from User where username = ? ", name);
+				"from User where username = ? ", username);
 		if (users != null && users.size() >= 1) {
-			return users.get(0);
+			return users;
 		}
 		return null;
 	}
