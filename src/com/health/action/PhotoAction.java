@@ -17,13 +17,14 @@ import com.health.service.NewsService;
 import com.health.service.PhotoService;
 import com.opensymphony.xwork2.*;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.*;
 import org.jboss.weld.context.ApplicationContext;
 
 public class PhotoAction extends ActionSupport{
 	private File file1 ;
-	private String pname;
+	private String fileFileName;
     private  PhotoService photoservice;
 	private Photo photo;
 	private List<Photo> listphoto;
@@ -32,13 +33,16 @@ public class PhotoAction extends ActionSupport{
 	private List<News> listNews;
 	private Integer nid;
 
-	public String getPname() {
-		return pname;
+	
+
+
+	public String getFileFileName() {
+		return fileFileName;
 	}
 
 
-	public void setPname(String pname) {
-		this.pname = pname;
+	public void setFileFileName(String fileFileName) {
+		this.fileFileName = fileFileName;
 	}
 
 
@@ -133,22 +137,13 @@ public class PhotoAction extends ActionSupport{
         
     }
 	public String upload() throws Exception{
-		String path = ServletActionContext.getRequest().getRealPath("/upload");  
+		String path = ServletActionContext.getRequest().getRealPath("/images/photo");  
         //输出流  
-        OutputStream os = new FileOutputStream(new File(path,pname));  
-        //输入流  
-        InputStream is = new FileInputStream(file1);  
-          System.out.println(path);
-          System.out.println(pname);
-        byte[] buf = new byte[1024];  
-        int length = 0 ;  
-          
-        while(-1 != (length = is.read(buf) ) )  
-        {  
-            os.write(buf, 0, length) ;  
-        }  
-        is.close();  
-        os.close();  
+		File target=new File(path,fileFileName);
+		FileUtils.copyFile(file1, target);
+		String s=getFileFileName().toString();//图片name
+         System.out.print(s); 
+   
           
 		return SUCCESS;
 		
