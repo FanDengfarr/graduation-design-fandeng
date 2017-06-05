@@ -46,6 +46,27 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 		return (List<News>)getHibernateTemplate()
 			.find("from News");
 	}
+	public List<News> findcheck()
+	{
+		return (List<News>)getHibernateTemplate()
+			.find("from News where vip = 'yes'");
+	}
+
+	public List<News> findNotcheck()
+	{
+		return (List<News>)getHibernateTemplate()
+			.find("from News where vip = 'no'");
+	}
+	public List<News> findByAuth(String auth)
+	{
+		List<News> newss = (List<News>)getHibernateTemplate()
+			.find("from News where author = ? " , auth);
+		if (newss!= null && newss.size() >= 1)
+		{
+			return newss;
+		}
+		return null;
+	}
 
 
 	

@@ -25,10 +25,6 @@
         <action name="HotNews" class="hotnews" method="show">
             <result name="success">/hotnews_list.jsp</result>
         </action>
-        <action name="User" class="userA" method="changePass">
-            <result name="input">./user/changePass.jsp</result>
-            <result name="success">./user/myInfo.jsp</result>
-        </action>
        <action name="ShowPhoto" class="photoa" method="show">
             <result name="success">./showphoto.jsp</result>
         </action>
@@ -41,8 +37,50 @@
          <action name="User1" class="userA" method="show">
             <result name="success">./user/user_index.jsp</result>
         </action>
-        <action name="Newsadd" class="newsmng" method="show">
+        <action name="User" class="userA" method="changeName">
+            <result  type= "redirectAction" name="success">User1</result>
+            <result name="input">./user/changeName.jsp</result>
+        </action>
+        <action name="User2" class="userA" method="changePass">
+            <result  type= "redirectAction" name="success">User1</result>
+            <result name="input">./user/changePass.jsp</result>
+        </action>
+        <action name="Newsshow" class="newsmng" method="showall">
             <result name="success">./user/myArticleList.jsp</result>
+        </action>
+       <action name="Newsdelete" class="newsmng" method="delete">
+            <result  type= "redirectAction" name="success">Newsshow</result>
+        </action>
+       
+        <action name="Newsadd" class="newsmng" method="show">
+            <result  type= "redirectAction" name="success">Newsshow</result>
+        </action>
+        <action name="Newsshowone" class="newsmng" method="showone">
+            <result name="success">./user/updateArticle.jsp</result>
+        </action>
+        <action name="Newsupdate" class="newsmng" method="update">
+            <result  type= "redirectAction" name="success">Newsshow</result>
+        </action>
+        <action name="Photoshow" class="photoa" method="show">
+            <result name="success">./user/photo_list.jsp</result>
+        </action>
+        <action name="Photoupload" class="photoa" method="upload">
+            <result type= "redirectAction" name="success">Photoshow</result>
+        </action>
+        <action name="Checknewsall" class="checknews" method="showall">
+            <result name="success">./admin/shownewsall.jsp</result>
+        </action>
+        <action name="Checknewscheck" class="checknews" method="showcheck">
+            <result name="success">./admin/shownewscheck.jsp</result>
+        </action>
+         <action name="ChecknewsNotcheck" class="checknews" method="shownotcheck">
+            <result name="success">./admin/shownewsuncheck.jsp</result>
+        </action>
+         <action name="Checknewsyes" class="checknews" method="checkyes">
+            <result type= "redirectAction" name="success">Checknewsall</result>
+        </action>
+        <action name="Checknewsno" class="checknews" method="checkno">
+            <result type= "redirectAction" name="success">Checknewsall</result>
         </action>
     </package>
 </struts>    

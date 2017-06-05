@@ -128,6 +128,7 @@
         <property name="newsservice" ref="newss"></property>
     </bean>
      <bean id="userA" class="com.health.action.UserAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
         <property name="userservice" ref="users"></property>
     </bean>
     <bean id="videoa" class="com.health.action.ListVideoAction" scope="prototype">
@@ -135,5 +136,12 @@
     </bean>
     <bean id="videoA" class="com.health.action.VideoAction" scope="prototype">
         <property name="videoservice" ref="videos"></property>
+    </bean>
+    <bean id="photoa" class="com.health.action.PhotoAction" scope="prototype">
+        <property name="photoservice" ref="photos"></property>
+         <property name="newsservice" ref="newss"></property>
+    </bean>
+    <bean id="checknews" class="com.health.action.CheckNewsAction" scope="prototype">
+        <property name="newsservice" ref="newss"></property>
     </bean>
 	</beans>

@@ -22,13 +22,21 @@ public class NewsServiceImpl implements NewsService{
 	public void setNewsdao(NewsDao newsdao) {
 		this.newsdao = newsdao;
 	}
-
+	 public List<News> findByAuth(String auth){
+		 return newsdao.findByAuth(auth);
+	 }
 
 	public List<News> findById(Integer id) {
         return newsdao.findById(id);
     }
 	public List<News> findAll(){
 		return newsdao.findAll();
+	}
+	public List<News> findcheck(){
+		return newsdao.findcheck();
+	}
+	public List<News> findNotcheck(){
+		return newsdao.findNotcheck();
 	}
 	public Pagebean queryForPage(int pageSize, int page) {    
 		final String hql = "from News news where news.vip='yes' order by news.createtime DESC "; //≤È—Ø”Ôæ‰    
@@ -50,6 +58,9 @@ public class NewsServiceImpl implements NewsService{
 		}    
 	public void update(News news){
 		 newsdao.update(news);
+	}
+	public void delete(News news){
+		 newsdao.delete(news);
 	}
 	public Pagebean queryForPageCount(int pageSize, int page) {    
 		final String hql = "from News news where news.vip='yes' order by news.count DESC "; //≤È—Ø”Ôæ‰    

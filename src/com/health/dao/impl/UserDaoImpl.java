@@ -59,16 +59,25 @@ public class UserDaoImpl extends BaseDaoHibernate3 implements UserDao {
 		}
 		return flag;
 	}
-
-	public boolean updateByUsername(User user) {
-		@SuppressWarnings("unchecked")
-		List<User> users = (List<User>) getHibernateTemplate().find(
-				"from User where username = ? ", user.getUsername());
-		if (users != null && users.size() >= 1) {
-			// getHibernateTemplate().update(user, User);
-			return true;
-		} else
-			return false;
+	public boolean checkName(String name){
+		List<User> u = this.getHibernateTemplate()
+				.find("from User where name=?", name
+						);
+		Boolean flag = false;
+		if (u.size() > 0) {
+			flag = true;
+		}
+		return flag;
+	}
+	public boolean checkPass(String password){
+		List<User> u = this.getHibernateTemplate()
+				.find("from User where password=?", password
+						);
+		Boolean flag = false;
+		if (u.size() > 0) {
+			flag = true;
+		}
+		return flag;
 	}
 
 }

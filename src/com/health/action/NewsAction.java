@@ -127,7 +127,6 @@ public class NewsAction extends ActionSupport implements ModelDriven {
 
 	public String show(){
 		Timestamp time = new Timestamp(new java.util.Date().getTime());
-		System.out.print(time);
 		this.listNews=newsservice.findById(nid);
 		ActionContext ctx=ActionContext.getContext();
 		for(int i=0;i<listNews.size();i++){

@@ -40,9 +40,9 @@
   <s:iterator value="listvideo">
 	<table border="0" width="50%" height="100" align="center" >
 		<tr>
-		  	<td>作者：<s:property value="vname"/></td>
+		  	<td>标题:<s:property value="vname"/></td>
 		   	<td>来源：<s:property value="vurl"/></td>
-		   	<td>浏览次数:<s:property value="vcontext" />次</td>
+		   	<td>内容:<s:property value="vcontext" /></td>
 		</tr> 
 		
 	</table>

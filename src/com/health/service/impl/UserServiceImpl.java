@@ -20,6 +20,13 @@ public class UserServiceImpl implements UserService {
 	public boolean login(String username, String password) {
 		return userdao.login(username, password);
 	}
+	public boolean checkName(String name) {
+		return userdao.checkName(name);
+	}
+	
+	public boolean checkPass(String password) {
+		return userdao.checkPass(password);
+	}
 
 	public boolean register(User user) {
 		Integer ref = (Integer) userdao.save(user);
@@ -28,10 +35,8 @@ public class UserServiceImpl implements UserService {
 		else
 			return false;
 	}
-
-	public boolean changeName(User user) {
-		userdao.updateByUsername(user);
-		return true;
+	public void update(User user){
+		userdao.update(user);
 	}
 
 	@Override

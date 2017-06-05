@@ -3,7 +3,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -27,36 +27,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="col-md-10">  
                         <div class="panel panel-default">  
                             <div class="panel-heading">  
-                                <h4>发布文章</h4>  
+                                <h4>修改文章</h4>  
                             </div>  
-  
+   <s:iterator value="listNews">
                             <div class="panel-body">  
-                                <form method="post" action="article.add.handle.php" class="form-horizontal">  
+                                <form method="post" action="Newsupdate!update?nid=<s:property value="%{nid}" />" class="form-horizontal">  
                                     <div class="form-group">  
                                         <label for="article-title" class="col-sm-2 control-label">标题</label>  
                                         <div class="col-sm-10">  
-                                            <input type="text" class="form-control" id="article-title" placeholder="Title" name="title">  
+                                            <input type="text" class="form-control" id="article-title" name="news.title"value="<s:property value="title" />">  
                                         </div>  
                                     </div>  
-  
-                                    <div class="form-group">  
-                                        <label for="article-author" class="col-sm-2 control-label">作者</label>  
-                                        <div class="col-sm-10">  
-                                            <input type="text" class="form-control" id="article-author" placeholder="Author" name="author">  
-                                        </div>  
-                                    </div>  
-  
-                                    <div class="form-group">  
-                                        <label for="article-des" class="col-sm-2 control-label">简介</label>  
-                                        <div class="col-sm-10">  
-                                            <textarea name="description" id="article-des" cols="30" rows="5" class="form-control"></textarea>  
-                                        </div>  
-                                    </div>  
+
   
                                     <div class="form-group">  
                                         <label for="article-content" class="col-sm-2 control-label">内容</label>  
                                         <div class="col-sm-10">  
-                                            <textarea name="content" id="article-content" cols="30" rows="15" class="form-control"></textarea>  
+                                            <textarea name="news.context" id="article-content" cols="30" rows="15" class="form-control" ><s:property value="context" /></textarea>  
                                         </div>  
                                     </div>  
   
@@ -66,17 +53,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                         </div>  
                                     </div>  
                                 </form>  
-                            </div>  
+                            </div> 
+                            </s:iterator> 
                         </div>  
                     </div>  
                 </div>  
             </div>  
         </div>  
     </div>  
-  
-    <footer class="copyright">  
-        Copyright &copyright; 1995-2016, DreamBoy.NET, All Rights Reserved  
-    </footer>  
+   
   </body>
  
   <script src="js/jquery-1.7.2.min.js"></script>

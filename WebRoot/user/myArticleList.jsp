@@ -3,7 +3,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -30,25 +30,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 <h4>文章列表</h4>  
                             </div>  
     <div class="panel-body">  
+    
                                 <table class="table table-hover">  
                                     <tr>  
                                         <th>标题</th>  
-                                        <th>发布时间</th>  
-                                        <th>阅读数量</th>
+                                        <th>发布时间</th>                                       
+                                        <th>审核通过</th> 
                                         <th>文章操作</th>  
-                                    </tr>  
+                                    </tr> 
+                                    <s:iterator value="listNews"> 
                                     <tbody>  
                                        
-                                                    <tr>  
-                                                        <td>美食与健康</td>  
-                                                        <td>2017-4-1</td>
-                                                        <td>999</td>  
-                                                        <td><a href="updateArticle.jsp">删除</a>  
-                                                             <a href="updateArticle.jsp">修改</a>  
+                                                    <tr>
+                                                        <td><s:property value="title" /></td>  
+                                                        <td><s:property value="createtime" /></td>
+                                                        <td><s:property value="vip " /></td> 
+                                                        <td><a href="Newsdelete!delete?nid=<s:property value="%{nid}" />">删除</a>  
+                                                             <a href="Newsshowone!showone?nid=<s:property value="%{nid}" />">修改</a>
+                                                             <a href="Photoshow!show?nid=<s:property value="%{nid}" />">图片管理</a>  
                                                         </td>  
-                                                    </tr>                                  
+                                                    </tr>                                 
                                     </tbody>  
-                                </table>  
+                                    </s:iterator> 
+                                </table> 
+                                
                             </div>  
                             </div>  
                         </div>  

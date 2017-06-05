@@ -35,7 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <div class="form-group">  
                                         <label for="article-title" class="col-sm-2 control-label">标题</label>  
                                         <div class="col-sm-10">  
-                                            <input type="text" class="form-control" id="article-title"  name="title">  
+                                            <input type="text" class="form-control" id="article-title"  name="news.title">  
                                         </div>  
                                     </div>  
   
@@ -43,7 +43,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <div class="form-group">  
                                         <label for="article-content" class="col-sm-2 control-label">内容</label>  
                                         <div class="col-sm-10">  
-                                            <textarea name="context" id="article-content" cols="30" rows="15" class="form-control"></textarea>  
+                                            <textarea name="news.context" id="article-content" cols="30" rows="15" class="form-control"></textarea>  
                                         </div>  
                                     </div>  
   

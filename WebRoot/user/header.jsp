@@ -45,7 +45,7 @@
                                </a>
                                <ul class="dropdown-menu">
                                <li><a href="user/addArticle.jsp">发布文章</a></li>
-                               <li><a href="user/myArticleList.jsp">文章列表</a></li>
+                               <li><a href="Newsshow!showall">文章列表</a></li>
                                </ul>
                            </li>
                        <li class="dropdown">

@@ -11,8 +11,12 @@ public interface NewsService {
 	 public List<News> findById(Integer id);
 	 public Pagebean queryForPage(int pageSize,int page); 
 	 public List<News> findAll();
+	 public List<News> findcheck();
+	 public List<News> findNotcheck();
 	 public void update(News news);
 	 public Pagebean queryForPageCount(int pageSize,int page);
 	 public Integer save(News news);
+	 public List<News> findByAuth(String auth);
+	 public void delete(News news);
 }
 	

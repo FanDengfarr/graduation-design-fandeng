@@ -3,6 +3,8 @@ package com.health.action;
 import java.sql.Timestamp;
 import java.util.List;
 
+import org.apache.struts2.ServletActionContext;
+
 import com.health.pojo.News;
 import com.health.pojo.User;
 import com.health.service.NewsService;
@@ -11,15 +13,24 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-public class NewsMngAction extends ActionSupport implements ModelDriven {
+public class NewsMngAction extends ActionSupport {
 	private UserService userservice;
 	private NewsService newsservice;
 	private News news;
+	private Integer nid;
 	private List<News> listNews;
 	private User user;
 	private List<User> listUsers;
 	public UserService getUserservice() {
 		return userservice;
+	}
+
+	public Integer getNid() {
+		return nid;
+	}
+
+	public void setNid(Integer nid) {
+		this.nid = nid;
 	}
 
 	public NewsService getNewsservice() {
@@ -71,8 +82,6 @@ public class NewsMngAction extends ActionSupport implements ModelDriven {
 		ActionContext ctx=ActionContext.getContext();
 		String username1=(String) ctx.getSession().get("username");
 		this.listUsers=userservice.findByName(username1);
-		news.setTitle(news.getTitle());
-		news.setContext(news.getContext());
 		news.setVip("no");
 		news.setUser(listUsers.get(0));
 		news.setAuthor(listUsers.get(0).getName());
@@ -82,11 +91,28 @@ public class NewsMngAction extends ActionSupport implements ModelDriven {
 		
 	}
 
-	@Override
-	public Object getModel() {
-		if (news == null)
-			news = new News();
-		return news;
+	public String showall(){
+		ActionContext ctx=ActionContext.getContext();
+		String username1=(String) ctx.getSession().get("username");
+		this.listUsers=userservice.findByName(username1);
+		this.listNews=newsservice.findByAuth(listUsers.get(0).getName());
+		return SUCCESS;
 	}
-
+	public String delete(){
+		this.listNews=newsservice.findById(nid);
+		newsservice.delete(listNews.get(0));
+		return SUCCESS;
+	}
+	
+	public String showone(){
+		this.listNews=newsservice.findById(nid);
+		return SUCCESS;
+	}
+	public String update(){
+		this.listNews=newsservice.findById(nid);
+		listNews.get(0).setTitle(news.getTitle());
+		listNews.get(0).setContext(news.getContext());
+		newsservice.update(listNews.get(0));
+		return SUCCESS;
+	}
 }

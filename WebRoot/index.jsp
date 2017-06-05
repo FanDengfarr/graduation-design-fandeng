@@ -66,7 +66,6 @@
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
 				<div class="desc animate-box">
 					<h2>快来分享你的健康饮食小秘诀吧</h2>
-					<span>此处可以是轮播图 <a href="http://www.runoob.com/bootstrap/bootstrap-carousel-plugin.html" target="_blank" class="fh5co-site-name">Bootstrap模板</a></span>
 					<span><a class="btn btn-primary" href="#" >Get Started</a></span>
 				</div>
 			</div>
@@ -87,7 +86,7 @@
 				<div class="row">
 					<div class="col-md-8 col-sm-8">
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-1.jpg);">
-							<a class="image-popup text-center" href="#">
+							<a class="image-popup text-center" href="ShowVideo!show?vid=8">
 								<div class="prod-title">
 									<h3>Don’t Just Stand There</h3>
 									<span>Illustration, Print</span>
@@ -97,7 +96,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-2.jpg);">
-							<a class="image-popup text-center" href="#">
+							<a class="image-popup text-center" href="ShowVideo!show?vid=7">
 								<div class="prod-title">
 									<h3>Don’t Just Stand There</h3>
 									<span>Illustration, Print</span>
@@ -107,7 +106,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-3.jpg);">
-							<a class="image-popup text-center" href="#">
+							<a class="image-popup text-center" href="ShowVideo!show?vid=9">
 								<div class="prod-title">
 									<h3>Don’t Just Stand There</h3>
 									<span>Illustration, Print</span>
@@ -117,7 +116,7 @@
 					</div>
 					<div class="col-md-8 col-sm-8">
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-4.jpg);">
-							<a class="image-popup text-center" href="#">
+							<a class="image-popup text-center" href="ShowVideo!show?vid=10">
 								<div class="prod-title">
 									<h3>Don’t Just Stand There</h3>
 									<span>Illustration, Print</span>
@@ -146,42 +145,42 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
-							<div class="image-popup" href="#">
+							<a href="ShowNews!show?nid=1"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
+							<div class="image-popup" href="ShowNews!show?nid=4">
 								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=4">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
+									<a href="ShowNews!show?nid=4" class="btn btn-primary">Read More</a>
 								</div>
 							</div> 
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
-							<div class="image-popup" href="#">
+							<a href="ShowNews!show?nid=2"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
+							<div class="image-popup" href="ShowNews!show?nid=2">
 								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=2">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
+									<a href="ShowNews!show?nid=2" class="btn btn-primary">Read More</a>
 								</div>
 							</div> 
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="#">
+							<a href="ShowNews!show?nid=3"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
+							<div class="image-popup" href="ShowNews!show?nid=3">
 								<div class="prod-title">
-									<h3><a href=""#>45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=3">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="#" class="btn btn-primary">Read More</a>
+									<a href="ShowNews!show?nid=3" class="btn btn-primary">Read More</a>
 								</div>
 							</div> 
 						</div>

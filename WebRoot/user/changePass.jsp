@@ -31,25 +31,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             </div>  
   
                             <div class="panel-body">  
-                                <form method="post" action="user.action" class="form-horizontal">  
+                                <form method="post" action="User2!changePass" class="form-horizontal">  
                                     <div class="form-group">  
                                         <label for="article-title" class="col-sm-2 control-label">旧密码</label>  
                                         <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-title" placeholder="请输入原来的密码" name="password">  
+                                            <input type="password" class="form-control" id="article-title" placeholder="请输入原来的密码" name="password">  
                                         </div>  
                                     </div>  
   
                                     <div class="form-group">  
                                         <label for="article-author" class="col-sm-2 control-label">新密码</label>  
                                         <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-author" placeholder="请输入新密码" name="newPass">  
+                                            <input type="password" class="form-control" id="article-author" placeholder="请输入新密码" name="newPass">  
                                         </div>  
                                     </div>  
   
                                     <div class="form-group">  
                                         <label for="article-author" class="col-sm-2 control-label">确认新密码</label>  
                                         <div class="col-sm-4">  
-                                            <input type="text" class="form-control" id="article-author" placeholder="请确认新密码" name="newPass1">  
+                                            <input type="password" class="form-control" id="article-author" placeholder="请确认新密码" name="newPass1">  
                                         </div>  
                                     </div> 
   

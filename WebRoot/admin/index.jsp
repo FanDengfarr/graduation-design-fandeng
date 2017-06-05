@@ -1,10 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <title>健康饮食后台管理</title>
@@ -29,162 +27,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 	
-<div class="navbar navbar-fixed-top">
-	
-	<div class="navbar-inner">
-		
-		<div class="container">
-			
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
-				<span class="icon-bar"></span> 
-				<span class="icon-bar"></span> 
-				<span class="icon-bar"></span> 				
-			</a>
-			
-			<a class="brand" href="./">后台管理</a>
-			
-			<div class="nav-collapse">
-			
-				<ul class="nav pull-right">
-					<li>
-						<a href="#"><span class="badge badge-warning">7</span></a>
-					</li>
-					
-					<li class="divider-vertical"></li>
-					
-					<li class="dropdown">
-						
-						<a data-toggle="dropdown" class="dropdown-toggle " href="#">
-							####<b class="caret"></b>							
-						</a>
-						
-						<ul class="dropdown-menu">
-							<li>
-								<a href="admin/account.jsp"><i class="icon-user"></i> 账号设置  </a>
-							</li>
-							
-							<li>
-								<a href="./change_password.jsp"><i class="icon-lock"></i> 重置密码</a>
-							</li>
-							
-							<li class="divider"></li>
-							
-							<li>
-								<a href="../admin_login.jsp"><i class="icon-off"></i> 登出</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				
-			</div> <!-- /nav-collapse -->
-			
-		</div> <!-- /container -->
-		
-	</div> <!-- /navbar-inner -->
-	
-</div> <!-- /navbar -->
 
-
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-
-<div id="content">
-	
-	<div class="container">
-		
-		<div class="row">
-			
-			<div class="span3">
-				
-				<div class="account-container">
-				
-					<div class="account-avatar">
-						<img src="../images/headshot.png" alt="" class="thumbnail" />
-					</div> <!-- /account-avatar -->
-				
-					<div class="account-details">
-					
-						<span class="account-name">####</span>
-						
-						<span class="account-role">管理员</span>
-						
-						<span class="account-actions">
-							<a href="javascript:;">特权</a> |
-							
-							<a href="javascript:;">编辑设置</a>
-						</span>
-					
-					</div> <!-- /account-details -->
-				
-				</div> <!-- /account-container -->
-				
-				<hr />
-				
-				<ul id="main-nav" class="nav nav-tabs nav-stacked">
-					
-					<li class="active">
-						<a href="admin/index.jsp">
-							<i class="icon-home"></i>
-							###		
-						</a>
-					</li>
-					
-					<li>
-						<a href="admin/faq.jsp">
-							<i class="icon-pushpin"></i>
-							###
-						</a>
-					</li>
-					
-					<li>
-						<a href="admin/plans.jsp">
-							<i class="icon-th-list"></i>
-							###		
-						</a>
-					</li>
-					
-					<li>
-						<a href="admin/grid.jsp">
-							<i class="icon-th-large"></i>
-							###
-							<span class="label label-warning pull-right">5</span>
-						</a>
-					</li>
-					
-					<li>
-						<a href="admin/charts.jsp">
-							<i class="icon-signal"></i>
-							###	
-						</a>
-					</li>
-					
-					<li>
-						<a href="admin/account.jsp">
-							<i class="icon-user"></i>
-							账号							
-						</a>
-					</li>
-					
-					<li>
-						<a href="../admin_login.jsp">
-							<i class="icon-lock"></i>
-							登录	
-						</a>
-					</li>
-					
-				</ul>	
-				
-				<hr />
-				
-				<div class="sidebar-extra">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-				</div> <!-- .sidebar-extra -->
-				
-				<br />
-		
-			</div> <!-- /span3 -->
 			
 			
-			
+			<%@ include file="header.jsp" %>
 			<div class="span9">
 				
 				<h1 class="page-title">

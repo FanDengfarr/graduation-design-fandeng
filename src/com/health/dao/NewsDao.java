@@ -17,6 +17,9 @@ public interface NewsDao{
 	void delete(Integer id);
 
 	List<News> findAll();
+	List<News> findcheck();
+	List<News> findNotcheck();
+	List<News> findByAuth(String auth);
 
 
 	List<News> findById(Integer id);

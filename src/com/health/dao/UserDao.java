@@ -22,7 +22,7 @@ public interface UserDao {
 	List<User> findByName(String username);
 
 	boolean login(String username, String password);
-
-	boolean updateByUsername(User user);
+	boolean checkName(String name);
+	boolean checkPass(String password);
 
 }

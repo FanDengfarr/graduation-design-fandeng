@@ -1,5 +1,10 @@
 package com.health.action;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,10 +17,13 @@ import com.health.service.NewsService;
 import com.health.service.PhotoService;
 import com.opensymphony.xwork2.*;
 
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.*;
 import org.jboss.weld.context.ApplicationContext;
 
 public class PhotoAction extends ActionSupport{
+	private File file1 ;
+	private String pname;
     private  PhotoService photoservice;
 	private Photo photo;
 	private List<Photo> listphoto;
@@ -23,6 +31,26 @@ public class PhotoAction extends ActionSupport{
 	private News news;
 	private List<News> listNews;
 	private Integer nid;
+
+	public String getPname() {
+		return pname;
+	}
+
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+
+	public File getFile1() {
+		return file1;
+	}
+
+
+	public void setFile1(File file1) {
+		this.file1 = file1;
+	}
+
 
 	public PhotoService getPhotoservice() {
 		return photoservice;
@@ -97,13 +125,33 @@ public class PhotoAction extends ActionSupport{
 	public String show(){
 		this.listNews=newsservice.findById(nid);
 		ActionContext ctx=ActionContext.getContext();
-		for(int i=0;i<listNews.size();i++){
-		this.listphoto=photoservice.findByNew(listNews.get(i));		
-		}
+		this.listphoto=photoservice.findByNew(listNews.get(0));		
+
 		
 		
 		return SUCCESS;
         
     }
+	public String upload() throws Exception{
+		String path = ServletActionContext.getRequest().getRealPath("/upload");  
+        //输出流  
+        OutputStream os = new FileOutputStream(new File(path,pname));  
+        //输入流  
+        InputStream is = new FileInputStream(file1);  
+          System.out.println(path);
+          System.out.println(pname);
+        byte[] buf = new byte[1024];  
+        int length = 0 ;  
+          
+        while(-1 != (length = is.read(buf) ) )  
+        {  
+            os.write(buf, 0, length) ;  
+        }  
+        is.close();  
+        os.close();  
+          
+		return SUCCESS;
+		
+	}
 		
 }
