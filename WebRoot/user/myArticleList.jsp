@@ -36,6 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                         <th>标题</th>  
                                         <th>发布时间</th>                                       
                                         <th>审核通过</th> 
+                                        <th>分类</th>
                                         <th>文章操作</th>  
                                     </tr> 
                                     <s:iterator value="listNews"> 
@@ -45,9 +46,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                                         <td><s:property value="title" /></td>  
                                                         <td><s:property value="createtime" /></td>
                                                         <td><s:property value="vip " /></td> 
+                                                        <td><s:property value="sort " /></td> 
                                                         <td><a href="Newsdelete!delete?nid=<s:property value="%{nid}" />">删除</a>  
-                                                             <a href="Newsshowone!showone?nid=<s:property value="%{nid}" />">修改</a>
-                                                             <a href="Photoshow!show?nid=<s:property value="%{nid}" />">图片管理</a>  
+                                                            <a href="Newsshowone!showone?nid=<s:property value="%{nid}" />">修改</a>
+                                                            <a href="Photoshow!show?nid=<s:property value="%{nid}" />">图片管理</a>  
                                                         </td>  
                                                     </tr>                                 
                                     </tbody>  

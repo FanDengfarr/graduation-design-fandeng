@@ -12,6 +12,9 @@ public interface NewsService {
 	 public Pagebean queryForPage(int pageSize,int page); 
 	 public List<News> findAll();
 	 public List<News> findcheck();
+	 public List<News> findhealth();
+	 public List<News> finddiet();
+	 public List<News> findrest();
 	 public List<News> findNotcheck();
 	 public List<News> search(String title);
 	 public void update(News news);

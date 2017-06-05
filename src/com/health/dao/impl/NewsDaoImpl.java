@@ -68,7 +68,21 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 		return null;
 	}
 
-
+	public List<News> findhealth()
+	{
+		return (List<News>)getHibernateTemplate()
+			.find("from News where sort = '健身' and vip = 'yes'");
+	}
+	public List<News> finddiet()
+	{
+		return (List<News>)getHibernateTemplate()
+			.find("from News where sort = '饮食' and vip = 'yes'");
+	}
+	public List<News> findrest()
+	{
+		return (List<News>)getHibernateTemplate()
+			.find("from News where sort = '养生' and vip = 'yes'");
+	}
 	
 	public List<News> findById(Integer id)
 	{

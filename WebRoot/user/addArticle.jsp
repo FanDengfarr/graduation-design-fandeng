@@ -46,6 +46,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                             <textarea name="news.context" id="article-content" cols="30" rows="15" class="form-control"></textarea>  
                                         </div>  
                                     </div>  
+                                    <div class="form-group">  
+                                        <label for="article-title" class="col-sm-2 control-label">分类</label>  
+                                        <div class="col-sm-10">  
+                                            <select name="news.sort" class="form-control">  
+  												<option value ="健身">健身</option>  
+  												<option value ="养生">养生</option>  
+  												<option value="饮食">饮食</option>   
+											</select>  
+                                        </div>  
+                                    </div>  
   
                                     <div class="form-group">  
                                         <div class="col-sm-offset-2 col-sm-10">  

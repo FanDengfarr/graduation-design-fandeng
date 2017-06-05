@@ -32,6 +32,15 @@ public class NewsServiceImpl implements NewsService{
 	public List<News> findAll(){
 		return newsdao.findAll();
 	}
+	public List<News> findhealth(){
+		return newsdao.findhealth();
+	}
+	public List<News> finddiet(){
+		return newsdao.finddiet();
+	}
+	public List<News> findrest(){
+		return newsdao.findrest();
+	}
 	public List<News> findcheck(){
 		return newsdao.findcheck();
 	}

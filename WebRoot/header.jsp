@@ -67,7 +67,9 @@
 								<li>
 									<a href="#" class="fh5co-sub-ddown">分类</a>
 									 <ul class="fh5co-sub-menu">									 	
-										<li><a href="ListVideo!list">视频列表</a></li>
+										<li><a href="Findhealth!findhealth">健身</a></li>
+										<li><a href="Findrest!findrest">养生</a></li>
+										<li><a href="Finddiet!finddiet">饮食</a></li>
 									</ul>
 								</li>
 								<li><a href="about.jsp">关于</a>

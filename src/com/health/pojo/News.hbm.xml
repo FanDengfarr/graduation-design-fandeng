@@ -31,6 +31,9 @@
         <property name="vip" type="java.lang.String">
             <column name="vip" length="10" />
         </property>
+        <property name="sort" type="java.lang.String">
+            <column name="sort" length="20" />
+        </property>
         <set name="photos" inverse="true">
             <key>
                 <column name="npid" not-null="true" />

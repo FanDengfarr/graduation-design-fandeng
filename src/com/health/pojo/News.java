@@ -20,6 +20,7 @@ public class News implements java.io.Serializable {
 	private Timestamp createtime;
 	private Integer count;
 	private String vip;
+	private String sort;
 	private Set photos = new HashSet(0);
 	private Set comments = new HashSet(0);
 
@@ -31,8 +32,8 @@ public class News implements java.io.Serializable {
 
 	/** full constructor */
 	public News(User user, String title, String context, String author,
-			Timestamp createtime, Integer count, String vip, Set photos,
-			Set comments) {
+			Timestamp createtime, Integer count, String vip, String sort,
+			Set photos, Set comments) {
 		this.user = user;
 		this.title = title;
 		this.context = context;
@@ -40,6 +41,7 @@ public class News implements java.io.Serializable {
 		this.createtime = createtime;
 		this.count = count;
 		this.vip = vip;
+		this.sort = sort;
 		this.photos = photos;
 		this.comments = comments;
 	}
@@ -108,6 +110,14 @@ public class News implements java.io.Serializable {
 
 	public void setVip(String vip) {
 		this.vip = vip;
+	}
+
+	public String getSort() {
+		return this.sort;
+	}
+
+	public void setSort(String sort) {
+		this.sort = sort;
 	}
 
 	public Set getPhotos() {

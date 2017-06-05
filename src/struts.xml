@@ -15,11 +15,20 @@
          <action name="ListNews" class="newsa" method="list">
             <result name="success">./news_list.jsp</result>
         </action>
-        <action name="ShowNews" class="shownews" method="show">
+        <action name="Findhealth" class="shownews" method="findhealth">
+            <result name="success">./health_list.jsp</result>
+        </action>
+         <action name="Finddiet" class="shownews" method="finddiet">
+            <result name="success">./diet_list.jsp</result>
+        </action>
+         <action name="Findrest" class="shownews" method="findrest">
+            <result name="success">./rest_list.jsp</result>
+        </action>
+         <action name="ShowNews" class="shownews" method="show">
             <result name="success">./showarticle.jsp</result>
         </action>
         <action name="Search" class="shownews" method="search">
-            <result name="success">./news_list.jsp</result>
+            <result name="success">./search_list.jsp</result>
             <result name="input">./searchnull.jsp</result>
         </action>
         <action name="Register" class="regA" method="register">

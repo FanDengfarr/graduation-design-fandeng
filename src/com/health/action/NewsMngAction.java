@@ -112,6 +112,7 @@ public class NewsMngAction extends ActionSupport {
 		this.listNews=newsservice.findById(nid);
 		listNews.get(0).setTitle(news.getTitle());
 		listNews.get(0).setContext(news.getContext());
+		listNews.get(0).setSort(news.getSort());
 		newsservice.update(listNews.get(0));
 		return SUCCESS;
 	}

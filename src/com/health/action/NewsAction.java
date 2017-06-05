@@ -175,6 +175,30 @@ public class NewsAction extends ActionSupport implements ModelDriven {
 		return SUCCESS;
 		
 	}
+	public String findrest(){
+		this.listNews=newsservice.findrest();
+		if(this.listNews==null){
+			return INPUT;
+		}
+		return SUCCESS;
+		
+	}
+	public String findhealth(){
+		this.listNews=newsservice.findhealth();
+		if(this.listNews==null){
+			return INPUT;
+		}
+		return SUCCESS;
+		
+	}
+	public String finddiet(){
+		this.listNews=newsservice.finddiet();
+		if(this.listNews==null){
+			return INPUT;
+		}
+		return SUCCESS;
+		
+	}
 		
 	@Override
 	public Object getModel() {

@@ -58,7 +58,7 @@ fieldset.search:hover {
 <div>
 <form method="post" id="searchform" action="Search!search">
     <fieldset class="search">
-         <input type="text" class="box" name="title" id="s" class="inputText" placeholder="文章标题" x-webkit-speech>
+         <input type="text" class="box" name="title" id="s" class="inputText" placeholder="输入关键字" x-webkit-speech>
           <button class="btn" title="SEARCH"> </button>
     </fieldset>
 </form>

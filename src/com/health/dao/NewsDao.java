@@ -19,6 +19,9 @@ public interface NewsDao{
 	List<News> findAll();
 	List<News> findcheck();
 	List<News> findNotcheck();
+	List<News> findhealth();
+	List<News> finddiet();
+	List<News> findrest();
 	List<News> findByAuth(String auth);
 	List<News> search(String title);
 
