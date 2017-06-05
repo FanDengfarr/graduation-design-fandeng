@@ -25,6 +25,16 @@ import org.jboss.weld.context.ApplicationContext;
 public class NewsAction extends ActionSupport implements ModelDriven {
 	private PhotoService photoservice;
 	private String opttype;
+	private String title;
+	
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	public String getOpttype() {
 		return opttype;
 	}
@@ -157,7 +167,15 @@ public class NewsAction extends ActionSupport implements ModelDriven {
 		return SUCCESS;
         
     }
-
+	public String search(){
+		this.listNews=newsservice.search(title);
+		if(this.listNews==null){
+			return INPUT;
+		}
+		return SUCCESS;
+		
+	}
+		
 	@Override
 	public Object getModel() {
 		// TODO Auto-generated method stub

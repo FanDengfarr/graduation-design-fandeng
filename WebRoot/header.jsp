@@ -52,18 +52,20 @@
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
+							<li><%@ include file="search.jsp" %></a></li>
 								<li class="active">
 									<a href="index.jsp">主页</a>
 								</li>
 								<li>
 									<a href="#" class="fh5co-sub-ddown">精华</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="ListNews!list" >文章列表</a></li>
-										<li><a href="HotNews!list">今日最热</a></li>
+										<li><a href="ListNews!list" >全部文章</a></li>
+										<li><a href="HotNews!list">最热文章</a></li>
+										<li><a href="ListVideo!list">视频列表</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#" class="fh5co-sub-ddown">服务</a>
+									<a href="#" class="fh5co-sub-ddown">分类</a>
 									 <ul class="fh5co-sub-menu">									 	
 										<li><a href="ListVideo!list">视频列表</a></li>
 									</ul>
@@ -89,6 +91,7 @@
 								<!-- <li><a href="Login!logout">注销</a></li> -->
 								</s:else>
 							</ul>
+							
 						</nav>
 					</div>
 				</div>

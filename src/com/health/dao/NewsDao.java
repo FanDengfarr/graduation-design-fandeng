@@ -20,7 +20,7 @@ public interface NewsDao{
 	List<News> findcheck();
 	List<News> findNotcheck();
 	List<News> findByAuth(String auth);
-
+	List<News> search(String title);
 
 	List<News> findById(Integer id);
 	public List<News> queryForPage(final String hql,final int offset,final int length);    

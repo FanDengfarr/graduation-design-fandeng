@@ -18,6 +18,10 @@
         <action name="ShowNews" class="shownews" method="show">
             <result name="success">./showarticle.jsp</result>
         </action>
+        <action name="Search" class="shownews" method="search">
+            <result name="success">./news_list.jsp</result>
+            <result name="input">./searchnull.jsp</result>
+        </action>
         <action name="Register" class="regA" method="register">
           <result name="input">/user_register.jsp</result>
             <result name="success">/user_login.jsp</result>

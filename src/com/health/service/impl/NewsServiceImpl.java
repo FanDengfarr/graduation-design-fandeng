@@ -25,7 +25,7 @@ public class NewsServiceImpl implements NewsService{
 	 public List<News> findByAuth(String auth){
 		 return newsdao.findByAuth(auth);
 	 }
-
+	 
 	public List<News> findById(Integer id) {
         return newsdao.findById(id);
     }
@@ -84,5 +84,7 @@ public class NewsServiceImpl implements NewsService{
 		return  newsdao.save(news);
 	}
 
-		  
+	public List<News> search(String title){
+		 return newsdao.search(title);
+	 }  
 }

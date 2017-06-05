@@ -105,5 +105,14 @@ public class NewsDaoImpl extends BaseDaoHibernate3
 	
 	
 }
+	public List<News> search(String title){
+		List<News> newss = (List<News>)getHibernateTemplate()
+				.find("from News where title like '%"+title+"%' and vip = 'yes' ");
+			if (newss!= null && newss.size() >= 1)
+			{
+				return newss;
+			}
+			return null;
 		
+	}
 }
