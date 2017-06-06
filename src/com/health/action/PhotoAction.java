@@ -1,15 +1,10 @@
 package com.health.action;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.IOException;
+
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.health.pojo.News;
 import com.health.pojo.Photo;
@@ -19,12 +14,11 @@ import com.opensymphony.xwork2.*;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
-import org.apache.struts2.interceptor.*;
-import org.jboss.weld.context.ApplicationContext;
+
 
 public class PhotoAction extends ActionSupport{
-	private File file1 ;
-	private String fileFileName;
+	private File fileTest ;
+	private String fileTestFileName;
     private  PhotoService photoservice;
 	private Photo photo;
 	private List<Photo> listphoto;
@@ -36,23 +30,24 @@ public class PhotoAction extends ActionSupport{
 	
 
 
-	public String getFileFileName() {
-		return fileFileName;
+	
+	public File getFileTest() {
+		return fileTest;
 	}
 
 
-	public void setFileFileName(String fileFileName) {
-		this.fileFileName = fileFileName;
+	public void setFileTest(File fileTest) {
+		this.fileTest = fileTest;
 	}
 
 
-	public File getFile1() {
-		return file1;
+	public String getFileTestFileName() {
+		return fileTestFileName;
 	}
 
 
-	public void setFile1(File file1) {
-		this.file1 = file1;
+	public void setFileTestFileName(String fileTestFileName) {
+		this.fileTestFileName = fileTestFileName;
 	}
 
 
@@ -137,15 +132,37 @@ public class PhotoAction extends ActionSupport{
         
     }
 	public String upload() throws Exception{
-		String path = ServletActionContext.getRequest().getRealPath("/images/photo");  
-        //�����  
-		File target=new File(path,fileFileName);
-		FileUtils.copyFile(file1, target);
-		String s=getFileFileName().toString();//ͼƬname
-         System.out.print(s); 
-   
-          
-		return SUCCESS;
+		String[] str = { ".jpg", ".jpeg", ".bmp", ".gif", ".png" };
+		System.out.println(fileTestFileName);
+        if(fileTest==null || fileTest.length()>4194304 ){  
+            return INPUT;  
+        }  
+        for (String s : str) {  
+            if (fileTestFileName.endsWith(s)) { 
+            	
+            	this.listNews=newsservice.findById(nid);
+                String realPath = ServletActionContext.getServletContext().getRealPath("/images/photo");//实际路径  
+                File saveFile = new File(new File(realPath),fileTestFileName);  //在该实际路径下实例化一个文件  
+                //判断父目录是否存在  
+                System.out.println(realPath);
+                if(!saveFile.getParentFile().exists()){  
+                    saveFile.getParentFile().mkdirs();  
+                }  
+                try {  
+                    //执行文件上传  
+                    //FileUtils 类名 org.apache.commons.io.FileUtils;  
+                    //是commons-io包中的，commons-fileupload 必须依赖 commons-io包实现文件上次，实际上就是将一个文件转换成流文件进行读写  
+                   FileUtils.copyFile(fileTest, saveFile);
+                   photo.setPname(fileTestFileName);
+                   photo.setPurl(realPath);
+                   photo.setNews(listNews.get(0));
+                   photoservice.save(photo);
+                } catch (IOException e) {  
+                    return INPUT;  
+                }  
+            }  
+        }  
+        return SUCCESS;  
 		
 	}
 		

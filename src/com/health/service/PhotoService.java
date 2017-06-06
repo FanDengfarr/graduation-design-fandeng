@@ -7,4 +7,7 @@ import com.health.pojo.Photo;
 
 public interface PhotoService {
 	public List<Photo> findByNew(News news);
+	public Integer save(Photo photo);
+	public void update(Photo photo);
+	public void delete(Photo photo);
 }

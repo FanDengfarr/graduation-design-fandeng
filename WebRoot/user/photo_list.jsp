@@ -32,14 +32,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             </div>  
                             </s:iterator>
     <div class="panel-body">  
-   							<form action="Photoupload!upload?nid=<s:property value="%{nid}" />" enctype="multipart/form-data" method="post" > 
+    							<s:iterator value="listNews">
+   							<form action="Photoupload!upload?nid=<s:property value="%{nid}"/>"  enctype="multipart/form-data" method="post" > 
    										<table>
    										<tr>
-   										<td><input type="file" name="file1">  </td>
+   										<td><input type="file" name="fileTest">  </td>
                                         <td><input type="submit" value="确定上传"/></td>
                                         </tr>
                                         </table>
                                         </form> 
+                                 </s:iterator>
                                 <table class="table table-hover"> 
                                   
                                     <tr>  

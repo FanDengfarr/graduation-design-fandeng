@@ -20,5 +20,14 @@ public class PhotoServiceImpl implements PhotoService {
 	public List<Photo> findByNew(News news){
 		return photodao.findByNew(news);
 	}
+	public void update(Photo photo){
+		photodao.update(photo);
+	}
+	public void delete(Photo photo){
+		photodao.delete(photo);
+	}
+	public Integer save(Photo photo){
+		return  photodao.save(photo);
+	}
 	
 }
