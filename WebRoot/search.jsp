@@ -12,7 +12,7 @@
 fieldset.search {
     padding: 4px;
     border: none;
-    width: 232px;
+    width: 255px;
     background:#e0e0e0;
 }
  

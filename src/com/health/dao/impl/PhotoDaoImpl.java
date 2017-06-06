@@ -1,6 +1,7 @@
 package com.health.dao.impl;
 
 import java.util.List;
+
 import com.health.common.impl.BaseDaoHibernate3;
 import com.health.dao.PhotoDao;
 import com.health.pojo.News;
@@ -32,12 +33,13 @@ public class PhotoDaoImpl extends BaseDaoHibernate3 implements PhotoDao {
 		return (List<Photo>) getHibernateTemplate().find("from Photo");
 	}
 
-	public Photo findByName(String photo) {
-		@SuppressWarnings("unchecked")
-		List<Photo> photos = (List<Photo>) getHibernateTemplate().find(
-				"from Photo where name = ? ", photo);
-		if (photos != null && photos.size() >= 1) {
-			return photos.get(0);
+	public List<Photo> findById(Integer id)
+	{
+		List<Photo> photos = (List<Photo>)getHibernateTemplate()
+			.find("from Photo where pid = ? " , id);
+		if (photos!= null && photos.size() >= 1)
+		{
+			return photos;
 		}
 		return null;
 	}

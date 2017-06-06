@@ -10,4 +10,5 @@ public interface PhotoService {
 	public Integer save(Photo photo);
 	public void update(Photo photo);
 	public void delete(Photo photo);
+	public List<Photo> findById(Integer id);
 }

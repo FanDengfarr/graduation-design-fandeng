@@ -4,132 +4,142 @@ import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
 
+
 /**
  * User entity. @author MyEclipse Persistence Tools
  */
 
-public class User implements java.io.Serializable {
+public class User  implements java.io.Serializable {
 
-	// Fields
 
-	private Integer id;
-	private String username;
-	private String password;
-	private String state;
-	private String actiCode;
-	private String tokenExptime;
-	private String name;
-	private Timestamp regtime;
-	private Set newses = new HashSet(0);
-	private Set comments = new HashSet(0);
+    // Fields    
 
-	// Constructors
+     private Integer id;
+     private String username;
+     private String password;
+     private String state;
+     private String actiCode;
+     private String tokenExptime;
+     private String name;
+     private Timestamp regtime;
+     private Set newses = new HashSet(0);
+     private Set comments = new HashSet(0);
 
-	/** default constructor */
-	public User() {
-	}
+
+    // Constructors
+
+    /** default constructor */
+    public User() {
+    }
 
 	/** minimal constructor */
-	public User(String username, String name) {
-		this.username = username;
-		this.name = name;
-	}
+    public User(String username, String name) {
+        this.username = username;
+        this.name = name;
+    }
+    
+    /** full constructor */
+    public User(String username, String password, String state, String actiCode, String tokenExptime, String name, Timestamp regtime, Set newses, Set comments) {
+        this.username = username;
+        this.password = password;
+        this.state = state;
+        this.actiCode = actiCode;
+        this.tokenExptime = tokenExptime;
+        this.name = name;
+        this.regtime = regtime;
+        this.newses = newses;
+        this.comments = comments;
+    }
 
-	/** full constructor */
-	public User(String username, String password, String state,
-			String actiCode, String tokenExptime, String name,
-			Timestamp regtime, Set newses, Set comments) {
-		this.username = username;
-		this.password = password;
-		this.state = state;
-		this.actiCode = actiCode;
-		this.tokenExptime = tokenExptime;
-		this.name = name;
-		this.regtime = regtime;
-		this.newses = newses;
-		this.comments = comments;
-	}
+   
+    // Property accessors
 
-	// Property accessors
+    public Integer getId() {
+        return this.id;
+    }
+    
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Integer getId() {
-		return this.id;
-	}
+    public String getUsername() {
+        return this.username;
+    }
+    
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public String getPassword() {
+        return this.password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public String getUsername() {
-		return this.username;
-	}
+    public String getState() {
+        return this.state;
+    }
+    
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getActiCode() {
+        return this.actiCode;
+    }
+    
+    public void setActiCode(String actiCode) {
+        this.actiCode = actiCode;
+    }
 
-	public String getPassword() {
-		return this.password;
-	}
+    public String getTokenExptime() {
+        return this.tokenExptime;
+    }
+    
+    public void setTokenExptime(String tokenExptime) {
+        this.tokenExptime = tokenExptime;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getState() {
-		return this.state;
-	}
+    public Timestamp getRegtime() {
+        return this.regtime;
+    }
+    
+    public void setRegtime(Timestamp regtime) {
+        this.regtime = regtime;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public Set getNewses() {
+        return this.newses;
+    }
+    
+    public void setNewses(Set newses) {
+        this.newses = newses;
+    }
 
-	public String getActiCode() {
-		return this.actiCode;
-	}
+    public Set getComments() {
+        return this.comments;
+    }
+    
+    public void setComments(Set comments) {
+        this.comments = comments;
+    }
+   
 
-	public void setActiCode(String actiCode) {
-		this.actiCode = actiCode;
-	}
 
-	public String getTokenExptime() {
-		return this.tokenExptime;
-	}
 
-	public void setTokenExptime(String tokenExptime) {
-		this.tokenExptime = tokenExptime;
-	}
 
-	public String getName() {
-		return this.name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
 
-	public Timestamp getRegtime() {
-		return this.regtime;
-	}
 
-	public void setRegtime(Timestamp regtime) {
-		this.regtime = regtime;
-	}
-
-	public Set getNewses() {
-		return this.newses;
-	}
-
-	public void setNewses(Set newses) {
-		this.newses = newses;
-	}
-
-	public Set getComments() {
-		return this.comments;
-	}
-
-	public void setComments(Set comments) {
-		this.comments = comments;
-	}
 
 }

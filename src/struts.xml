@@ -77,8 +77,11 @@
         <action name="Photoshow" class="photoa" method="show">
             <result name="success">./user/photo_list.jsp</result>
         </action>
+        <action name="Photodelete" class="photoa" method="delete">
+            <result type= "redirectAction" name="success">Newsshow</result>
+        </action>
         <action name="Photoupload" class="photoa" method="upload">
-            <result type= "redirectAction" name="success" >Photoshow</result>
+            <result name="success" >./user/upload_success.jsp</result>
              <result name="input">./user/myArticleList.jsp</result>
         </action>
         <action name="Checknewsall" class="checknews" method="showall">

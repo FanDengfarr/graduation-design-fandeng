@@ -30,10 +30,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             <div class="panel-heading">  
                                 <h4><s:property value="title" />的图片管理</h4>  
                             </div>  
-                            </s:iterator>
+                           
     <div class="panel-body">  
-    							<s:iterator value="listNews">
-   							<form action="Photoupload!upload?nid=<s:property value="%{nid}"/>"  enctype="multipart/form-data" method="post" > 
+    							
+   							<form action="Photoupload!upload?nid=<s:property value="%{nid}" />"  enctype="multipart/form-data" method="post" > 
    										<table>
    										<tr>
    										<td><input type="file" name="fileTest">  </td>
@@ -56,8 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                                     <tr>
                                                         <td><s:property value="pname" /></td>  
                                                         <td><s:property value="purl" /></td>                                       
-                                                        <td><a href="Newsdelete!delete?nid=<s:property value="%{nid}" />">删除</a>  
-                                                             <a href="Newsshowone!showone?nid=<s:property value="%{nid}" />">修改</a>  
+                                                        <td><a href="Photodelete!delete?ppid=<s:property value="%{pid}" />">删除</a>    
                                                         </td>  
                                                     </tr>                                 
                                     </tbody>                                       

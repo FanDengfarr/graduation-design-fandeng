@@ -2,10 +2,12 @@ package com.health.action;
 
 import java.io.File;
 import java.io.IOException;
-
 import java.util.List;
 
 
+
+
+import com.health.pojo.Comment;
 import com.health.pojo.News;
 import com.health.pojo.Photo;
 import com.health.service.NewsService;
@@ -16,7 +18,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 
 
-public class PhotoAction extends ActionSupport{
+public class PhotoAction extends ActionSupport implements ModelDriven{
 	private File fileTest ;
 	private String fileTestFileName;
     private  PhotoService photoservice;
@@ -26,11 +28,25 @@ public class PhotoAction extends ActionSupport{
 	private News news;
 	private List<News> listNews;
 	private Integer nid;
+	private Integer ppid;
 
 	
 
 
 	
+
+
+
+	public Integer getPpid() {
+		return ppid;
+	}
+
+
+	public void setPpid(Integer ppid) {
+		this.ppid = ppid;
+	}
+
+
 	public File getFileTest() {
 		return fileTest;
 	}
@@ -123,35 +139,33 @@ public class PhotoAction extends ActionSupport{
 
 	public String show(){
 		this.listNews=newsservice.findById(nid);
-		ActionContext ctx=ActionContext.getContext();
 		this.listphoto=photoservice.findByNew(listNews.get(0));		
 
-		
-		
+		return SUCCESS;
+        
+    }
+	public String delete(){
+		this.listphoto=photoservice.findById(ppid);	
+		photoservice.delete(listphoto.get(0));
 		return SUCCESS;
         
     }
 	public String upload() throws Exception{
+		this.listNews=newsservice.findById(nid);
 		String[] str = { ".jpg", ".jpeg", ".bmp", ".gif", ".png" };
-		System.out.println(fileTestFileName);
         if(fileTest==null || fileTest.length()>4194304 ){  
             return INPUT;  
         }  
         for (String s : str) {  
             if (fileTestFileName.endsWith(s)) { 
             	
-            	this.listNews=newsservice.findById(nid);
-                String realPath = ServletActionContext.getServletContext().getRealPath("/images/photo");//实际路径  
-                File saveFile = new File(new File(realPath),fileTestFileName);  //在该实际路径下实例化一个文件  
-                //判断父目录是否存在  
-                System.out.println(realPath);
+            	
+                String realPath = ServletActionContext.getServletContext().getRealPath("/images");  
+                File saveFile = new File(new File(realPath),fileTestFileName);   
                 if(!saveFile.getParentFile().exists()){  
                     saveFile.getParentFile().mkdirs();  
                 }  
                 try {  
-                    //执行文件上传  
-                    //FileUtils 类名 org.apache.commons.io.FileUtils;  
-                    //是commons-io包中的，commons-fileupload 必须依赖 commons-io包实现文件上次，实际上就是将一个文件转换成流文件进行读写  
                    FileUtils.copyFile(fileTest, saveFile);
                    photo.setPname(fileTestFileName);
                    photo.setPurl(realPath);
@@ -160,10 +174,16 @@ public class PhotoAction extends ActionSupport{
                 } catch (IOException e) {  
                     return INPUT;  
                 }  
-            }  
+            }
         }  
         return SUCCESS;  
 		
+	}
+	public Object getModel() {
+		// TODO Auto-generated method stub
+		if (photo == null)
+			photo = new Photo();
+		return photo;
 	}
 		
 }

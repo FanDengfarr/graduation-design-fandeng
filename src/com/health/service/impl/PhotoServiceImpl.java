@@ -29,5 +29,8 @@ public class PhotoServiceImpl implements PhotoService {
 	public Integer save(Photo photo){
 		return  photodao.save(photo);
 	}
+	public List<Photo> findById(Integer id) {
+        return photodao.findById(id);
+    }
 	
 }

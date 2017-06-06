@@ -18,7 +18,7 @@ public interface PhotoDao {
 
 	List<Photo> findAll();
 
-	Photo findByName(String name);
+	List<Photo> findById(Integer id);
 
 
 	List<Photo> findByNew(News news);
