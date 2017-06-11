@@ -113,18 +113,22 @@ public class UserAction extends ActionSupport implements ModelDriven {
 		
 	}
     public String changePass(){
-    	System.out.println(this.getNewPass()+"ooooo"+this.getNewPass1());
-    	if(userservice.checkName(user.getPassword())&&this.getNewPass().equals(this.getNewPass1())){
+    	if(userservice.checkPass(user.getPassword())&&this.getNewPass().equals(this.getNewPass1())&&!this.getNewPass().equals("")){
     		ActionContext ctx=ActionContext.getContext();
     		String username1=(String) ctx.getSession().get("username");
     		this.listUsers=userservice.findByName(username1);
     		listUsers.get(0).setPassword(this.getNewPass());
-		return SUCCESS;
+    		userservice.update(this.listUsers.get(0));
+    		return SUCCESS;
     	}
     	else 
     		return INPUT;
     }
-    
+    public String showlist(){
+		this.listUsers=userservice.findAll();
+		return SUCCESS;
+		
+	}
 	@Override
 	public Object getModel() {
 		if (user == null)

@@ -18,6 +18,7 @@ public interface UserDao {
 	List<User> findAll();
 
 	List<User> findByNameAndPass(String name, String pass);
+	List<User> findById(Integer id);
 
 	List<User> findByName(String username);
 

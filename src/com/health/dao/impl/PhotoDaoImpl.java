@@ -50,5 +50,10 @@ public class PhotoDaoImpl extends BaseDaoHibernate3 implements PhotoDao {
 			.find("from Photo as p where "
 			+ "p.news = ?" , news);
 	}
+	public List<Photo> findCheckByNew(News news)
+	{
+		return (List<Photo>)getHibernateTemplate()
+			.find("from Photo as p where p.state = 'yes' and p.news = ?" , news);
+	}
 
 }

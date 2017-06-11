@@ -77,8 +77,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Selected Work</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>精彩视频</h3>
+						<p>快来观看美食健康小视频吧!</p>
 					</div>
 				</div>
 			</div>
@@ -88,8 +88,8 @@
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-1.jpg);">
 							<a class="image-popup text-center" href="ShowVideo!show?vid=8">
 								<div class="prod-title">
-									<h3>Don’t Just Stand There</h3>
-									<span>Illustration, Print</span>
+									<h3>Adventures</h3>
+									<span>in ICE</span>
 								</div>
 							</a>
 						</div>
@@ -98,8 +98,8 @@
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-2.jpg);">
 							<a class="image-popup text-center" href="ShowVideo!show?vid=7">
 								<div class="prod-title">
-									<h3>Don’t Just Stand There</h3>
-									<span>Illustration, Print</span>
+									<h3>日本美食</h3>
+									<span>鸡肉刺身</span>
 								</div>
 							</a>
 						</div>
@@ -108,18 +108,18 @@
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-3.jpg);">
 							<a class="image-popup text-center" href="ShowVideo!show?vid=9">
 								<div class="prod-title">
-									<h3>Don’t Just Stand There</h3>
-									<span>Illustration, Print</span>
+									<h3>Tokyo</h3>
+									<span>Tokyo food</span>
 								</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-8 col-sm-8">
 						<div class="fh5co-grid animate-box" style="background-image: url(images/work-4.jpg);">
-							<a class="image-popup text-center" href="ShowVideo!show?vid=10">
+							<a class="image-popup text-center" href="ShowVideo!show?vid=6">
 								<div class="prod-title">
-									<h3>Don’t Just Stand There</h3>
-									<span>Illustration, Print</span>
+									<h3>客家酿酒</h3>
+									<span>世界正老去，我们正年轻</span>
 								</div>
 							</a>
 						</div>
@@ -136,8 +136,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Recent From Blog</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>精彩文章</h3>
+						<p>精美文章呈现，让你看个够!</p>
 					</div>
 				</div>
 			</div>
@@ -145,14 +145,13 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="ShowNews!show?nid=1"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
+							<a href="ShowNews!show?nid=4"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 							<div class="image-popup" href="ShowNews!show?nid=4">
 								<div class="prod-title">
-									<h3><a href="ShowNews!show?nid=4">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=4">但为美食不顾身</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="ShowNews!show?nid=4" class="btn btn-primary">Read More</a>
+									<p>革命不是请客吃饭，但绝对离不开请客吃饭。</p>
+									<a href="ShowNews!show?nid=4" class="btn btn-primary">阅读文章</a>
 								</div>
 							</div> 
 						</div>
@@ -162,25 +161,23 @@
 							<a href="ShowNews!show?nid=2"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
 							<div class="image-popup" href="ShowNews!show?nid=2">
 								<div class="prod-title">
-									<h3><a href="ShowNews!show?nid=2">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=2">贪吃害死朱自清</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="ShowNews!show?nid=2" class="btn btn-primary">Read More</a>
+									<p>朱自清不领救济粮是事实，但他其实是因为胃病不治。</p>
+									<a href="ShowNews!show?nid=2" class="btn btn-primary">阅读文章</a>
 								</div>
 							</div> 
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<div class="fh5co-blog animate-box">
-							<a href="ShowNews!show?nid=3"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
-							<div class="image-popup" href="ShowNews!show?nid=3">
+							<a href="ShowNews!show?nid=11"><img class="img-responsive" src="images/blog-3.jpg" alt=""></a>
+							<div class="image-popup" href="ShowNews!show?nid=11">
 								<div class="prod-title">
-									<h3><a href="ShowNews!show?nid=3">45 Minimal Worksspace Rooms for Web Savvys</a></h3>
+									<h3><a href="ShowNews!show?nid=11">中国人的主食</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
-									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<a href="ShowNews!show?nid=3" class="btn btn-primary">Read More</a>
+									<p>   “逐臭之夫”字典上说：“犹言不学好下向之徒。”</p>
+									<a href="ShowNews!show?nid=11" class="btn btn-primary">阅读文章</a>
 								</div>
 							</div> 
 						</div>
@@ -194,14 +191,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Guardian</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="#/" target="_blank">Freehtml5</a> / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+							<p>健康文库设计平台</p>
 						</div>
 					</div>
 				</div>

@@ -36,7 +36,7 @@
         </property>
         <set name="photos" inverse="true">
             <key>
-                <column name="npid" not-null="true" />
+                <column name="npid" />
             </key>
             <one-to-many class="com.health.pojo.Photo" />
         </set>

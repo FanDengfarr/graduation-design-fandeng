@@ -46,12 +46,21 @@ public class UserDaoImpl extends BaseDaoHibernate3 implements UserDao {
 		}
 		return null;
 	}
+	public List<User> findById(Integer id) {
+		@SuppressWarnings("unchecked")
+		List<User> users = (List<User>) getHibernateTemplate().find(
+				"from User where id = ? ", id);
+		if (users != null && users.size() >= 1) {
+			return users;
+		}
+		return null;
+	}
 
 	@Override
 	public boolean login(String username, String password) {
 		@SuppressWarnings("unchecked")
 		List<User> u = this.getHibernateTemplate()
-				.find("from User where username=? and password=?", username,
+				.find("from User where state = 'yes' and username=? and password=?", username,
 						password);
 		Boolean flag = false;
 		if (u.size() > 0) {

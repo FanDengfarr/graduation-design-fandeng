@@ -22,6 +22,7 @@ public interface PhotoDao {
 
 
 	List<Photo> findByNew(News news);
+	List<Photo> findCheckByNew(News news);
 
 	
 }

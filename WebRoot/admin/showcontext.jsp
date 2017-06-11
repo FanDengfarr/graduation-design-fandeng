@@ -36,53 +36,24 @@
 				
 				
 				
-				
-				
-				<div class="widget widget-table">
+				<div class="widget">
 										
 					<div class="widget-header">
-						<i class="icon-th-list"></i>
-						<h3>所有文章</h3>
+						<i class="icon-signal"></i>
+						<h3>文章内容</h3>
 					</div> <!-- /widget-header -->
-					
-					<div class="widget-content">
-					
-						<table class="table table-striped table-bordered">
-							<thead>
-								<tr>
-									<th>id</th>
-									<th>标题</th>
-									<th>作者</th>
-									<th>创建时间</th>
-									<th>当前状态</th>
-									<th>审核</th>
-								</tr>
-							</thead>
-							<s:iterator value="listNews">
-							<tbody>
-								<tr>
-									<td><s:property value="nid"/></td>
-									<td><a href="ShowContext!show?nid=<s:property value="%{nid}"/>"><s:property value="title"/></a></td>
-									<td><s:property value="author"/></td>
-									<td><s:property value="createtime"/></td>
-									<td><s:property value="vip"/></td>
-									<td class="action-td">
-										<a href="Checknewsyes!checkyes?nid=<s:property value="%{nid}"/>" class="btn btn-small btn-warning">
-											<i class="icon-ok"></i>								
-										</a>					
-										<a href="Checknewsno!checkno?nid=<s:property value="%{nid}"/>" class="btn btn-small">
-											<i class="icon-remove"></i>						
-										</a>
-									</td>
-								</tr>
-								
-							</tbody>
-							</s:iterator >
-						</table>
-					
+														
+					<div class="widget-content">					
+						<s:iterator value="listNews">
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<s:property value="context"/>
+						</p>
+						</s:iterator>		
 					</div> <!-- /widget-content -->
 					
 				</div> <!-- /widget -->
+				
+				
 				
 				
 				
@@ -99,7 +70,14 @@
 </div> <!-- /content -->
 					
 	
-
+<div id="footer">
+	
+	<div class="container">				
+		<hr />
+		<p>&copy; 2012 Go Ideate.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+	</div> <!-- /container -->
+	
+</div> <!-- /footer -->
 
 
     

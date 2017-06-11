@@ -152,7 +152,7 @@ public class PhotoAction extends ActionSupport implements ModelDriven{
     }
 	public String upload() throws Exception{
 		this.listNews=newsservice.findById(nid);
-		String[] str = { ".jpg", ".jpeg", ".bmp", ".gif", ".png" };
+		String[] str = { ".jpg", ".jpeg", ".bmp", ".gif", ".png", "PNG", "JPG" };
         if(fileTest==null || fileTest.length()>4194304 ){  
             return INPUT;  
         }  
@@ -160,15 +160,16 @@ public class PhotoAction extends ActionSupport implements ModelDriven{
             if (fileTestFileName.endsWith(s)) { 
             	
             	
-                String realPath = ServletActionContext.getServletContext().getRealPath("/images");  
-                File saveFile = new File(new File(realPath),fileTestFileName);   
+                String realPath = ServletActionContext.getServletContext().getRealPath("/images/upload_photo");  
+                File saveFile = new File(new File(realPath),fileTestFileName); 
+                System.out.println(realPath+"@@@@@@@@@@");
                 if(!saveFile.getParentFile().exists()){  
                     saveFile.getParentFile().mkdirs();  
                 }  
                 try {  
                    FileUtils.copyFile(fileTest, saveFile);
                    photo.setPname(fileTestFileName);
-                   photo.setPurl(realPath);
+                   photo.setPurl("images/upload_photo/"+fileTestFileName);
                    photo.setNews(listNews.get(0));
                    photoservice.save(photo);
                 } catch (IOException e) {  

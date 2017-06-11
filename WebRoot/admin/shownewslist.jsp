@@ -35,14 +35,11 @@
 				
 				
 				
-				
-				
-				
 				<div class="widget widget-table">
 										
 					<div class="widget-header">
 						<i class="icon-th-list"></i>
-						<h3>所有文章</h3>
+						<h3>审核通过文章</h3>
 					</div> <!-- /widget-header -->
 					
 					<div class="widget-content">
@@ -54,26 +51,18 @@
 									<th>标题</th>
 									<th>作者</th>
 									<th>创建时间</th>
-									<th>当前状态</th>
-									<th>审核</th>
+									<th>图片查看</th>
 								</tr>
 							</thead>
 							<s:iterator value="listNews">
 							<tbody>
 								<tr>
 									<td><s:property value="nid"/></td>
-									<td><a href="ShowContext!show?nid=<s:property value="%{nid}"/>"><s:property value="title"/></a></td>
+									<td><s:property value="title"/></td>
 									<td><s:property value="author"/></td>
 									<td><s:property value="createtime"/></td>
-									<td><s:property value="vip"/></td>
-									<td class="action-td">
-										<a href="Checknewsyes!checkyes?nid=<s:property value="%{nid}"/>" class="btn btn-small btn-warning">
-											<i class="icon-ok"></i>								
-										</a>					
-										<a href="Checknewsno!checkno?nid=<s:property value="%{nid}"/>" class="btn btn-small">
-											<i class="icon-remove"></i>						
-										</a>
-									</td>
+									<td><a href="Photoshow1!show?nid=<s:property value="%{nid}" />"/>关联图片</a></td>
+
 								</tr>
 								
 							</tbody>
@@ -98,7 +87,6 @@
 	
 </div> <!-- /content -->
 					
-	
 
 
 

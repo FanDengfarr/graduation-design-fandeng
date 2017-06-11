@@ -10,7 +10,7 @@
         </action>
         <action name="AdminLogin" class="admina" method="adminlogin">
             <result name="input">/admin_login.jsp</result>
-            <result name="success">./admin/index.jsp</result>
+            <result type= "redirectAction" name="success">Checknewsall</result>
         </action>
          <action name="ListNews" class="newsa" method="list">
             <result name="success">./news_list.jsp</result>
@@ -26,6 +26,9 @@
         </action>
          <action name="ShowNews" class="shownews" method="show">
             <result name="success">./showarticle.jsp</result>
+        </action>
+         <action name="ShowContext" class="shownews" method="show">
+            <result name="success">./admin/showcontext.jsp</result>
         </action>
         <action name="Search" class="shownews" method="search">
             <result name="success">./search_list.jsp</result>
@@ -55,7 +58,7 @@
             <result name="input">./user/changeName.jsp</result>
         </action>
         <action name="User2" class="userA" method="changePass">
-            <result  type= "redirectAction" name="success">User1</result>
+            <result name="success">./user/changePass_success.jsp</result>
             <result name="input">./user/changePass.jsp</result>
         </action>
         <action name="Newsshow" class="newsmng" method="showall">
@@ -77,6 +80,9 @@
         <action name="Photoshow" class="photoa" method="show">
             <result name="success">./user/photo_list.jsp</result>
         </action>
+        <action name="Photoshow1" class="photoa" method="show">
+            <result name="success">./admin/showphotolist.jsp</result>
+        </action>
         <action name="Photodelete" class="photoa" method="delete">
             <result type= "redirectAction" name="success">Newsshow</result>
         </action>
@@ -86,6 +92,9 @@
         </action>
         <action name="Checknewsall" class="checknews" method="showall">
             <result name="success">./admin/shownewsall.jsp</result>
+        </action>
+         <action name="Checknewslist" class="checknews" method="showcheck">
+            <result name="success">./admin/shownewslist.jsp</result>
         </action>
         <action name="Checknewscheck" class="checknews" method="showcheck">
             <result name="success">./admin/shownewscheck.jsp</result>
@@ -98,6 +107,24 @@
         </action>
         <action name="Checknewsno" class="checknews" method="checkno">
             <result type= "redirectAction" name="success">Checknewsall</result>
+        </action>
+        <action name="Checkphotoyes" class="checkphoto" method="checkyes">
+            <result type= "redirectAction" name="success">Checknewslist</result>
+        </action>
+        <action name="Checkphotono" class="checkphoto" method="checkno">
+            <result type= "redirectAction" name="success">Checknewslist</result>
+        </action>
+        <action name="Checkshowphoto" class="checkphoto" method="show">
+            <result name="success">./admin/showphoto.jsp</result>
+        </action>
+         <action name="Userlist" class="userA" method="showlist">
+            <result name="success">./admin/showuserlist.jsp</result>
+        </action>
+        <action name="Checkuseryes" class="checkuser" method="checkyes">
+            <result type= "redirectAction" name="success">Userlist</result>
+        </action>
+        <action name="Checkuserno" class="checkuser" method="checkno">
+            <result type= "redirectAction" name="success">Userlist</result>
         </action>
     </package>
 </struts>    

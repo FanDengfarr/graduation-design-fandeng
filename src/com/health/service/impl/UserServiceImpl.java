@@ -43,5 +43,11 @@ public class UserServiceImpl implements UserService {
 	public List<User> findByName(String username) {		
 		return userdao.findByName(username);
 	}
+	public List<User> findById(Integer id) {		
+		return userdao.findById(id);
+	}
+	public List<User> findAll() {		
+		return userdao.findAll();
+	}
 
 }

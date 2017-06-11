@@ -140,7 +140,7 @@ public class NewsAction extends ActionSupport implements ModelDriven {
 		this.listNews=newsservice.findById(nid);
 		ActionContext ctx=ActionContext.getContext();
 		for(int i=0;i<listNews.size();i++){
-			this.listphoto=photoservice.findByNew(listNews.get(i));
+			this.listphoto=photoservice.findCheckByNew(listNews.get(i));
 			this.listcomment=commentservice.findByNew(listNews.get(i));	
 		if(listNews.get(i).getCount()!=null)
 		listNews.get(i).setCount(listNews.get(0).getCount()+1);

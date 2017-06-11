@@ -13,5 +13,7 @@ public interface UserService {
 	boolean checkName(String name);
 	boolean checkPass(String password);
 	List<User> findByName(String username);
+	List<User> findById(Integer id);
+	List<User> findAll();
 	public void update(User user);
 }

@@ -35,14 +35,11 @@
 				
 				
 				
-				
-				
-				
 				<div class="widget widget-table">
 										
 					<div class="widget-header">
 						<i class="icon-th-list"></i>
-						<h3>所有文章</h3>
+						<h3>关联图片列表</h3>
 					</div> <!-- /widget-header -->
 					
 					<div class="widget-content">
@@ -51,29 +48,29 @@
 							<thead>
 								<tr>
 									<th>id</th>
-									<th>标题</th>
-									<th>作者</th>
-									<th>创建时间</th>
-									<th>当前状态</th>
+									<th>图片名称</th>
+									<th>路径</th>
+									<th>状态</th>
 									<th>审核</th>
 								</tr>
 							</thead>
-							<s:iterator value="listNews">
+							<s:iterator value="listphoto">
 							<tbody>
 								<tr>
-									<td><s:property value="nid"/></td>
-									<td><a href="ShowContext!show?nid=<s:property value="%{nid}"/>"><s:property value="title"/></a></td>
-									<td><s:property value="author"/></td>
-									<td><s:property value="createtime"/></td>
-									<td><s:property value="vip"/></td>
+									<td><s:property value="pid"/></td>
+									<td><a href="Checkshowphoto!show?pid=<s:property value="%{pid}"/>"><s:property value="pname"/></a></td>
+									<td><s:property value="purl"/></td>
+									<td><s:property value="state"/></td>
+									<s:iterator value="listNews">
 									<td class="action-td">
-										<a href="Checknewsyes!checkyes?nid=<s:property value="%{nid}"/>" class="btn btn-small btn-warning">
+										<a href="Checkphotoyes!checkyes?pid=<s:property value="%{pid}"/>&nid=<s:property value="%{nid}"/>" class="btn btn-small btn-warning">
 											<i class="icon-ok"></i>								
 										</a>					
-										<a href="Checknewsno!checkno?nid=<s:property value="%{nid}"/>" class="btn btn-small">
+										<a href="Checkphotono!checkno?pid=<s:property value="%{pid}"/>&nid=<s:property value="%{nid}"/>" class="btn btn-small">
 											<i class="icon-remove"></i>						
 										</a>
 									</td>
+									</s:iterator >
 								</tr>
 								
 							</tbody>
@@ -98,7 +95,6 @@
 	
 </div> <!-- /content -->
 					
-	
 
 
 

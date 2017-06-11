@@ -125,7 +125,17 @@
 </div>
 </div>
 </div>
-
+<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p>健康文库设计平台</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 </body>
 </html>
 

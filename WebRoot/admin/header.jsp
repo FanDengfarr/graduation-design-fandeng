@@ -67,15 +67,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 					<div class="account-details">
 					
-						<span class="account-name">####</span>
 						
-						<span class="account-role">管理员</span>
+						<span class="account-role">欢迎进入后台管理</span>
 						
-						<span class="account-actions">
-							<a href="javascript:;">特权</a> |
-							
-							<a href="javascript:;">编辑设置</a>
-						</span>
 					
 					</div> <!-- /account-details -->
 				
@@ -85,18 +79,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<ul id="main-nav" class="nav nav-tabs nav-stacked">
 					
-					<li class="active">
-						<a href="admin/index.jsp">
-							<i class="icon-home"></i>
-							主页	
-						</a>
-					</li>
 					
 					<li>
 						<a href="Checknewsall!showall">
 							<i class="icon-pushpin"></i>
 							所有文章
-							<span class="label label-warning pull-right">5</span>
+							
 						</a>
 					</li>
 					
@@ -104,7 +92,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href="Checknewscheck!showcheck">
 							<i class="icon-th-list"></i>
 							已审核文章	
-							<span class="label label-warning pull-right">5</span>
+							
 						</a>
 					</li>
 					
@@ -112,28 +100,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href="ChecknewsNotcheck!shownotcheck">
 							<i class="icon-th-large"></i>
 							待审核文章
-							<span class="label label-warning pull-right">5</span>
+							
 						</a>
 					</li>
 					
 					<li>
-						<a href="admin/index.jsp">
+						<a href="Checknewslist!showcheck">
 							<i class="icon-signal"></i>
-							###	
+							图片审核	
 						</a>
 					</li>
 					
 					<li>
-						<a href="admin/index.jsp">
+						<a href="Userlist!showlist">
 							<i class="icon-user"></i>
-							账号							
+							账号管理							
 						</a>
 					</li>
 					
 					<li>
-						<a href="admin/index.jsp">
+						<a href="../library/index.jsp">
 							<i class="icon-lock"></i>
-							登录	
+							返回主页
 						</a>
 					</li>
 					
@@ -141,9 +129,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<hr />
 				
-				<div class="sidebar-extra">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-				</div> <!-- .sidebar-extra -->
+				
 				
 				<br />
 		

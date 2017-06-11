@@ -59,7 +59,7 @@
 							<tbody>
 								<tr>
 									<td><s:property value="nid"/></td>
-									<td><a href=""><s:property value="title"/></a></td>
+									<td><a href="ShowContext!show?nid=<s:property value="%{nid}"/>"><s:property value="title"/></a></td>
 									<td><s:property value="author"/></td>
 									<td><s:property value="createtime"/></td>
 									<td><s:property value="vip"/></td>

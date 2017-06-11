@@ -11,13 +11,16 @@
             <generator class="increment"></generator>
         </id>
         <many-to-one name="news" class="com.health.pojo.News" fetch="select">
-            <column name="npid" not-null="true" />
+            <column name="npid" />
         </many-to-one>
         <property name="pname" type="java.lang.String">
             <column name="pname" length="50" />
         </property>
         <property name="purl" type="java.lang.String">
             <column name="purl" length="200" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="state" length="10" />
         </property>
     </class>
 </hibernate-mapping>

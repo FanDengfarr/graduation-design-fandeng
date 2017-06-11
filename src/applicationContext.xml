@@ -144,4 +144,11 @@
     <bean id="checknews" class="com.health.action.CheckNewsAction" scope="prototype">
         <property name="newsservice" ref="newss"></property>
     </bean>
+    <bean id="checkphoto" class="com.health.action.CheckPhotoAction" scope="prototype">
+        <property name="photoservice" ref="photos"></property>
+        <property name="newsservice" ref="newss"></property>
+    </bean>
+    <bean id="checkuser" class="com.health.action.CheckUserAction" scope="prototype">
+        <property name="userservice" ref="users"></property>
+    </bean>
 	</beans>
