@@ -61,7 +61,112 @@
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>更新日志如下</h3>
 						<p>项目成员：邓帆、黄庆海</p>
-				
+				<!-- 正文内容 -->
+<blockquote>
+<h3><strong>待续</strong></h3>
+</blockquote>
+<hr />
+
+<blockquote>
+<h3><strong>2017年6月5日</strong></h3>
+</blockquote>
+<ul>
+<h4>图片上传功能</h4>
+<h4>网站全局搜索功能</h4>
+<h4>文章分类功能</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年5月15日</strong></h3>
+</blockquote>
+<ul>
+<h4>发布文章完成</h4>
+<h4>添加账户注册时间</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年4月25日</strong></h3>
+</blockquote>
+<ul>
+<h4>视频展示页面小改，修改网页部分素材图片</h4>
+<h4>评论回复功能完成</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年4月20日</strong></h3>
+</blockquote>
+<ul>
+<h4>视频列表完成</h4>
+<h4>图片展示完成</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年4月15日</strong></h3>
+</blockquote>
+<ul>
+<h4>个人主页页面完成，重置密码实现</h4>
+<h4>热门文章展示完成</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年4月1日</strong></h3>
+</blockquote>
+<ul>
+<h4>添加web端微信二维码入口</h4>
+<h4>注册跳转异常修复</h4>
+<h4>基本完成概要设计/详细设计</h4>
+</ul>
+<hr />
+
+<blockquote>
+<h3><strong>2017年3月25日</strong></h3>
+</blockquote>
+<ul>
+<h4>登录/注册功能完善，实现注销功能</h4>
+<h4>添加个人主页雏形</h4>
+</ul>
+<hr />
+<blockquote>
+<h3><strong>2017年3月20日</strong></h3>
+</blockquote>
+<ul>
+<h4>初步实现登录/注册</h4>
+<h4>添加后台入口</h4>
+</ul>
+<hr />
+<blockquote>
+<h3><strong>2017年3月15日</strong></h3>
+</blockquote>
+<ul>
+<h4>SS2H框架搭建完成，同时微信订阅号项目开始建立</h4>
+</ul>
+<hr />
+<blockquote>
+<h3><strong>2017年3月9日</strong></h3>
+</blockquote>
+<ul>
+<h4>网站雏形建成,开始搭建SSH框架</h4>
+</ul>
+<hr />
+<blockquote>
+<h3><strong>2017年3月5日</strong></h3>
+</blockquote>
+<ul>
+<h4>项目开始建立，并且代码上传共享GitHub</h4>
+</ul>
+<hr />
+<blockquote>
+<h3><strong>2016年11月27日</strong></h3>
+</blockquote>
+<ul>
+<h4>书写需求分析，开始规划项目，并做好学习相关知识的准备</h4>
+</ul>
+<hr />
 					</div>				
 				</div>
 			</div>
@@ -69,79 +174,7 @@
 			<div class="container">
 			<div class="colspan">
 
-<!-- 正文内容 -->
-			<blockquote>
-<h1>2017年4月1日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>基本完成概要设计/详细设计</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
-<blockquote>
-<h1>2017年3月20日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>初步实现登录/注册,添加后台入口</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
-<blockquote>
-<h1>2017年3月15日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>SS2H框架搭建，同时微信订阅号项目开始建立</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
-<blockquote>
-<h1>2017年3月9日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>网站雏形搭建以</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
-<blockquote>
-<h1>2017年3月5日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>项目开始建立，并且代码上传共享GitHub</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
-<blockquote>
-<h1>2016年11月27日</h1>
-</blockquote>
-<ul>
-<li>
-<h3>书写需求分析，开始规划项目</h3>
-</li>
-<li>
-<h3></h3>
-</li>
-</ul>
-<hr />
+
 			</div>		
 			</div>
 		</div>

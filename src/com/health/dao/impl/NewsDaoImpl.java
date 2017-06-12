@@ -1,132 +1,118 @@
 package com.health.dao.impl;
 
-import java.util.*; 
+import java.util.List;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-import com.health.common.impl.*;
+import com.health.common.impl.BaseDaoHibernate3;
 import com.health.dao.NewsDao;
 import com.health.pojo.News;
 
-public class NewsDaoImpl extends BaseDaoHibernate3
-	implements NewsDao
-{
-	public News get(Integer id)
-	{
-		return (News)getHibernateTemplate()
-			.get(News.class , id);
+public class NewsDaoImpl extends BaseDaoHibernate3 implements NewsDao {
+	public News get(Integer id) {
+		return (News) getHibernateTemplate().get(News.class, id);
 	}
 
-	public Integer save(News news)
-	{
-		return (Integer)getHibernateTemplate()
-			.save(news);
-	}
-	public void update(News news)
-	{
-		getHibernateTemplate()
-			.update(news);
+	public Integer save(News news) {
+		return (Integer) getHibernateTemplate().save(news);
 	}
 
-	public void delete(News news)
-	{
-		getHibernateTemplate()
-			.delete(news);
+	public void update(News news) {
+		getHibernateTemplate().update(news);
 	}
 
-	public void delete(Integer id)
-	{
-		getHibernateTemplate()
-			.delete(get(id));
+	public void delete(News news) {
+		getHibernateTemplate().delete(news);
 	}
 
-	public List<News> findAll()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News");
-	}
-	public List<News> findcheck()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News where vip = 'yes'");
+	public void delete(Integer id) {
+		getHibernateTemplate().delete(get(id));
 	}
 
-	public List<News> findNotcheck()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News where vip = 'no'");
+	public List<News> findAll() {
+		return (List<News>) getHibernateTemplate().find("from News");
 	}
-	public List<News> findByAuth(String auth)
-	{
-		List<News> newss = (List<News>)getHibernateTemplate()
-			.find("from News where author = ? " , auth);
-		if (newss!= null && newss.size() >= 1)
-		{
+
+	public List<News> findcheck() {
+		return (List<News>) getHibernateTemplate().find(
+				"from News where vip = 'yes'");
+	}
+
+	public List<News> findNotcheck() {
+		return (List<News>) getHibernateTemplate().find(
+				"from News where vip = 'no'");
+	}
+
+	public List<News> findByAuth(String auth) {
+		List<News> newss = (List<News>) getHibernateTemplate().find(
+				"from News where author = ? ", auth);
+		if (newss != null && newss.size() >= 1) {
 			return newss;
 		}
 		return null;
 	}
 
-	public List<News> findhealth()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News where sort = '½¡Éí' and vip = 'yes'");
+	public List<News> findhealth() {
+		return (List<News>) getHibernateTemplate().find(
+				"from News where sort = 'å¥èº«' and vip = 'yes'");
 	}
-	public List<News> finddiet()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News where sort = 'ÒûÊ³' and vip = 'yes'");
+
+	public List<News> finddiet() {
+		return (List<News>) getHibernateTemplate().find(
+				"from News where sort = 'é¥®é£Ÿ' and vip = 'yes'");
 	}
-	public List<News> findrest()
-	{
-		return (List<News>)getHibernateTemplate()
-			.find("from News where sort = 'ÑøÉú' and vip = 'yes'");
+
+	public List<News> findrest() {
+		return (List<News>) getHibernateTemplate().find(
+				"from News where sort = 'å…»ç”Ÿ' and vip = 'yes'");
 	}
-	
-	public List<News> findById(Integer id)
-	{
-		List<News> newss = (List<News>)getHibernateTemplate()
-			.find("from News where nid = ? " , id);
-		if (newss!= null && newss.size() >= 1)
-		{
+
+	public List<News> findById(Integer id) {
+		List<News> newss = (List<News>) getHibernateTemplate().find(
+				"from News where nid = ? ", id);
+		if (newss != null && newss.size() >= 1) {
 			return newss;
 		}
 		return null;
 	}
 
-	
-	
-	public int getAllRowCount(String hql) {    
-		return this.getHibernateTemplate().find(hql).size();    
-		}    
-		/**   
-		 * ·ÖÒ³²éÑ¯   
-		 * @param hql  ²éÑ¯Ìõ¼ş   
-		 * @param offset  ¿ªÊ¼¼ÇÂ¼   
-		 * @param length  Ò»´Î²éÑ¯¼¸Ìõ¼ÇÂ¼   
-		 * @return ²éÑ¯µÄ¼ÇÂ¼¼¯ºÏ   
-		 */    
-		@SuppressWarnings("unchecked")    
-		public List<News> queryForPage(final String hql, final int offset, final int length) {    
-		Session session = this.getSession();    
-		Query q = session.createQuery(hql);    
-		q.setFirstResult(offset);    
-		q.setMaxResults(length);    
-		List<News> list = q.list();      
-		session.close();    
-		return list;    
-	
-	
-}
-	public List<News> search(String title){
-		List<News> newss = (List<News>)getHibernateTemplate()
-				.find("from News where title like '%"+title+"%' and vip = 'yes' ");
-			if (newss!= null && newss.size() >= 1)
-			{
-				return newss;
-			}
-			return null;
-		
+	public int getAllRowCount(String hql) {
+		return this.getHibernateTemplate().find(hql).size();
+	}
+
+	/**
+	 * ï¿½ï¿½Ò³ï¿½ï¿½Ñ¯
+	 * 
+	 * @param hql
+	 *            ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
+	 * @param offset
+	 *            ï¿½ï¿½Ê¼ï¿½ï¿½Â¼
+	 * @param length
+	 *            Ò»ï¿½Î²ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼
+	 * @return ï¿½ï¿½Ñ¯ï¿½Ä¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½
+	 */
+	@SuppressWarnings("unchecked")
+	public List<News> queryForPage(final String hql, final int offset,
+			final int length) {
+		Session session = this.getSession();
+		Query q = session.createQuery(hql);
+		q.setFirstResult(offset);
+		q.setMaxResults(length);
+		List<News> list = q.list();
+		session.close();
+		return list;
+
+	}
+
+	public List<News> search(String title) {
+		List<News> newss = (List<News>) getHibernateTemplate()
+				.find("from News where title like '%" + title
+						+ "%' and vip = 'yes' ");
+		if (newss != null && newss.size() >= 1) {
+			return newss;
+		}
+		return null;
+
 	}
 }

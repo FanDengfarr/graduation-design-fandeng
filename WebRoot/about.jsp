@@ -73,8 +73,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>About Us</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>关于我们</h3>
+						<p>我们是一群关注饮食健康的吃货，旨在发现和分享更多有趣有益的内容。</p>
 					</div>
 				</div>
 			</div>
@@ -88,8 +88,8 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 animate-box">
-						<h3>Simple &amp; Humble Beginning</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut rerum perspiciatis, debitis pariatur atque vitae sed blanditiis nobis sint, reprehenderit quas, natus corrupti! Ipsum cum possimus corporis aut architecto! Delectus enim adipisci quidem possimus voluptates! Aut ut aliquid molestias laudantium.</p>
+						<h3>太极 &amp;饮食</h3>
+						<p>在中国人的饮食文化中，有以形补形的说法，这与博大精深的太极不谋而合！</p>
 					</div>
 				</div>
 			</div>
@@ -98,8 +98,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>What We Do</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>我们在做什么</h3>
+						<p>发现更多有趣的内容，挖掘潜在的优质用户</p>
 					</div>
 				</div>
 			</div>
@@ -108,45 +108,24 @@
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
 							<span><i class="icon-browser"></i></span>
-							<h3>Web Development</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3>网页开发</h3>
+							<p>本项目基于SSH框架开发的Java Web工程</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
 							<span><i class="icon-mobile"></i></span>
-							<h3>Mobile Apps</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-tools"></i></span>
-							<h3>UX Design</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3>移动兼容</h3>
+							<p>网页使用Html5技术，兼容主流移动端平台</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
 							<span><i class="icon-video"></i></span>
-							<h3>Video Editing</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3>视频观看</h3>
+							<p>观看自己想看的视频</p>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-search"></i></span>
-							<h3>SEO Ranking</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-cloud"></i></span>
-							<h3>Cloud Based Apps</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</div>
